@@ -28,33 +28,6 @@ JMS3 = vmess, c10s3.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-8
 JMS4 = vmess, c10s4.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-80ed-6a333d656b7c, tls=false, skip-cert-verify=false, alterId=0
 JMS5 = vmess, c10s5.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-80ed-6a333d656b7c, tls=false, skip-cert-verify=false, alterId=0
 JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-80ed-6a333d656b7c, tls=false, skip-cert-verify=false, alterId=0
-UK
-UK1 Misaka = ss, nn1.meslink.xyz, 20004, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-UK2 Portfast = ss, nn1.meslink.xyz, 20005, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-UK3 Cloudflare = ss, nn1.meslink.xyz, 20006, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-UK4 Community Fibre = ss, nn1.meslink.xyz, 20007, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-UK5 Google = ss, nn1.meslink.xyz, 10132, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-UK6 Virgin [3X] = ss, nn1.meslink.xyz, 20038, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US1 Akile = ss, re1.911gt2r.com, 11010, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US2 Dmit = ss, re1.911gt2r.com, 11018, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US3 Misaka = ss, re1.911gt2r.com, 11012, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US4 Misaka = ss, re1.911gt2r.com, 11013, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US5 Misaka = ss, re1.911gt2r.com, 11016, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US6 Frontier = ss, re1.911gt2r.com, 11023, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US7 Misaka = ss, re1.911gt2r.com, 11014, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US8 Verizon = ss, re1.911gt2r.com, 11022, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US9 AT&T = ss, re1.911gt2r.com, 10071, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US10 Cloudflare = ss, re1.911gt2r.com, 10073, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US11 Google [UDPN 3X] = ss, re1.911-gt3-rs.com, 10035, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US12 T-mobile [UDPN 3X] = ss, re1.911-gt3-rs.com, 10036, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US13 Frontier [UDPN 3X] = ss, re1.911-gt3-rs.com, 10037, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US14 Misaka [UDPN 3X] = ss, re1.911-gt3-rs.com, 10038, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US15 Verizon [UDPN 3X] = ss, re1.911-gt3-rs.com, 10040, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-US16 Starlink [UDPN 6X] = ss, re1.911-gt3-rs.com, 10041, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-DE1 Misaka = ss, nn1.meslink.xyz, 20000, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-DE2 Netversor = ss, nn1.meslink.xyz, 20001, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-DE3 Cloudflare = ss, nn1.meslink.xyz, 20033, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
-DE4 Google = ss, nn1.meslink.xyz, 20003, encrypt-method=aes-128-gcm, password=07c13496-57fd-4a4a-9da3-00ee812af8f6, udp-relay=true
 
 [Proxy Group]
 🚀 节点选择 = select, 🇺🇸 JMS Auto, 🇺🇸 JMS Select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, DIRECT
