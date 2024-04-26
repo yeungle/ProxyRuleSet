@@ -11,7 +11,9 @@ test-timeout = 3
 # ---GeoIP数据库---
 # > 自定义GeoIP数据库
 # geoip-maxmind-url = https://raw.githubusercontent.com/JMVoid/ipip2mmdb/release/Country.mmdb
-geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb
+# 我自己找的：geoip-maxmind-url = https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb，感觉不准
+# stash目前使用的 geoip：https://fastly.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb
+geoip-maxmind-url = https://fastly.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb
 #
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 # DNS
