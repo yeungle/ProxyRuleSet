@@ -42,8 +42,6 @@ JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731
 🌍 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
 🌍 Bloomberg WSJ Reuters Select = select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
 
-
-
 [Rule]
 # BBC
 DOMAIN-KEYWORD,abematv.akamaized.net,🌍 BBC Select
