@@ -108,22 +108,22 @@ DOMAIN-SUFFIX,zdf.de,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,prosieben.de,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,zdf.de,🇩🇪 MESL DE Select
-DOMAIN-SUFFIX,nmrodam.com,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,tag.aticdn.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,de-config.sensic.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,logs1407.xiti.com,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,zdfvod-pckgr.akamaized.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,zdfvod.akamaized.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,nrodizdf-a.akamaihd.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,rodizdf-a.akamaihd.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,zdfvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select # zdf网站
-DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 MESL DE Select # ardmediathek网站
-DOMAIN-SUFFIX,wdrmedien-a.akamaid.net,🇩🇪 MESL DE Select # ardmediathek网站
-DOMAIN-SUFFIX,ard.de,🇩🇪 MESL DE Select # ardmediathek网站
-DOMAIN-SUFFIX,wdradaptiv-vh.akamaihd.net,🇩🇪 MESL DE Select # ardmediathek网站
-DOMAIN-SUFFIX,wdrvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select # ardmediathek网站
-DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net,🇩🇪 MESL DE Select # ardmediathek网站
-DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,nmrodam.com,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,tag.aticdn.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,de-config.sensic.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,logs1407.xiti.com,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,zdfvod-pckgr.akamaized.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,zdfvod.akamaized.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,nrodizdf-a.akamaihd.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,rodizdf-a.akamaihd.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,zdfvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,wdrmedien-a.akamaid.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,ard.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,wdradaptiv-vh.akamaihd.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,wdrvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 MESL DE Select
 
 
 # Apple
