@@ -6,11 +6,7 @@
 ## 安卓Surfboard如何使用
 1. 点击新建
 2. 从URL添加
-3. 输入下面链接： 
-
-```
-https://raw.githubusercontent.com/flyingparanoia/SurfBoard_Config/main/myprofile.txt?token=GHSAT0AAAAAACQ4M4O4FK7RNFAYXG3MOPR2ZRLZZTA
-```
+3. 复制配置文件的 RAW 链接到app，即可 
 
 
 注意：下面的链接会显示网络超时、网络错误。
