@@ -63,11 +63,12 @@ DE4 Google = ss, nn1.meslink.xyz, 20003, encrypt-method=aes-128-gcm, password=07
 🇺🇸 MESL US auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
 🇬🇧 MESL UK auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
 🇬🇧 MESL UK Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
-🇩🇪 MESL DE auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*DE.*, interval=300, tolerance=50
+🇩🇪 MESL DE Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*DE.*, interval=300, tolerance=50
 🌍 OpenAI Select		= select, 🚀 节点选择, 🇺🇸 JMS Auto, 🇺🇸 MESL US auto
 🌍 BBC Select		= select, 🚀 节点选择, 🇬🇧 MESL UK auto, 🇬🇧 MESL UK Select
 🌍 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
 🌍 Bloomberg WSJ Reuters Select = select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+
 
 
 [Rule]
@@ -102,9 +103,28 @@ DOMAIN-SUFFIX,scholar.google.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,openai.com,🌍 OpenAI Select
 
 # 德国
-DOMAIN-SUFFIX,prosieben.de,🇩🇪 MESL DE auto
-DOMAIN-SUFFIX,zdf.de,🇩🇪 MESL DE auto
-DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 MESL DE auto
+DOMAIN-SUFFIX,prosieben.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,zdf.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,prosieben.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,zdf.de,🇩🇪 MESL DE Select
+DOMAIN-SUFFIX,nmrodam.com,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,tag.aticdn.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,de-config.sensic.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,logs1407.xiti.com,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,zdfvod-pckgr.akamaized.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,zdfvod.akamaized.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,nrodizdf-a.akamaihd.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,rodizdf-a.akamaihd.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,zdfvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select # zdf网站
+DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,wdrmedien-a.akamaid.net,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,ard.de,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,wdradaptiv-vh.akamaihd.net,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,wdrvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net,🇩🇪 MESL DE Select # ardmediathek网站
+DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 MESL DE Select # ardmediathek网站
+
 
 # Apple
 DOMAIN-SUFFIX,appsto.re,🚀 节点选择
