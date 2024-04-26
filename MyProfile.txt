@@ -125,6 +125,11 @@ DOMAIN-SUFFIX,wdrvod-rwrtr.akamaized.net,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 MESL DE Select
 
+# Amazon
+DOMAIN-SUFFIX,amazon.com,🚀 节点选择
+DOMAIN,atv-ps.amazon.com,🚀 节点选择
+DOMAIN,ktpx.amazon.com,🚀 节点选择
+DOMAIN-SUFFIX,media-amazon.com,🚀 节点选择
 
 # Apple
 DOMAIN-SUFFIX,appsto.re,🚀 节点选择
