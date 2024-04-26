@@ -8,8 +8,13 @@
 2. 从URL添加
 3. 输入下面链接： 
 
-注意：下面的链接会显示网络超时。
+```
+https://raw.githubusercontent.com/flyingparanoia/SurfBoard_Config/main/myprofile.txt?token=GHSAT0AAAAAACQ4M4O4FK7RNFAYXG3MOPR2ZRLZZTA
+```
+
+
+注意：下面的链接会显示网络超时、网络错误。
+
 ```
 https://github.com/flyingparanoia/SurfBoard_Config/blob/main/myprofile.txt
-https://raw.githubusercontent.com/flyingparanoia/SurfBoard_Config/main/myprofile.txt?token=GHSAT0AAAAAACQ4M4O45MBKPWXTGBTVDQRIZRLZVUA
 ```
