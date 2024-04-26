@@ -106,7 +106,8 @@ DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,amazon.dev,🚀 节点选择
 DOMAIN-SUFFIX,amazonvideo.com,🚀 节点选择
 # 来自freeve
-DOMAIN-SUFFIX,branch.io,🚀 节点选择
+DOMAIN-SUFFIX,branch.io,REJECT
+# 上述必须拒绝，会分析用户所在地
 DOMAIN-SUFFIX,aiv-delivery.net,🚀 节点选择
 DOMAIN-SUFFIX,amazon.com,🚀 节点选择
 DOMAIN,atv-ps.amazon.com,🚀 节点选择
