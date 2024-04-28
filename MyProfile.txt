@@ -46,7 +46,7 @@ JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731
 🌍 OpenAI Select		= select, 🚀 节点选择, 🇺🇸 JMS Auto, 🇺🇸 MESL US auto
 🌍 BBC Select		= select, 🚀 节点选择, 🇬🇧 MESL UK auto, 🇬🇧 MESL UK Select
 🌍 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
-🌍 Bloomberg WSJ Reuters Select = select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+🌍 Bloomberg WSJ Reuters Select = select, 🇺🇸 MESL US auto, 🇬🇧 MESL UK auto,  🌍 Bloomberg WSJ Reuters Auto, 🇬🇧 MESL UK Select
 
 [Rule]
 # BBC
@@ -107,7 +107,7 @@ DOMAIN-SUFFIX,amazon.dev,🚀 节点选择
 DOMAIN-SUFFIX,amazonvideo.com,🚀 节点选择
 # 来自freeve
 DOMAIN-SUFFIX,branch.io,REJECT
-# 上述必须拒绝，会分析用户所在地
+# 上述必须拒绝
 DOMAIN-SUFFIX,aiv-delivery.net,🚀 节点选择
 DOMAIN-SUFFIX,amazon.com,🚀 节点选择
 DOMAIN,atv-ps.amazon.com,🚀 节点选择
