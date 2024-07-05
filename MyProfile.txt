@@ -21,7 +21,7 @@ skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 8.8.8.8, 172.16.0.0/12, 100.
 # 三大运营商：114.114.114.114
 # 阿里云：223.5.5.5
 # 腾讯云：119.29.29.29
-dns-server = system, 119.29.29.29, 8.8.8.8, 1.1.1.1, 114.114.114.114, 223.5.5.5
+dns-server = system, 101.226.4.6, 119.29.29.29, 8.8.8.8, 1.1.1.1, 114.114.114.114, 223.5.5.5
 # 我设置的fake ip
 fake-ip-range = 198.18.0.1/16
 always-real-ip = stun.l.google.com
@@ -69,15 +69,17 @@ DOMAIN-SUFFIX,bbc.com,🌍 BBC Select
 DOMAIN-SUFFIX,bbci.co,🌍 BBC Select
 DOMAIN-SUFFIX,bbci.co.uk,🌍 BBC Select
 
-# Bloomberg， WSJ， Reuters
+# Bloomberg， WSJ， Reuters,   Perplexity
 DOMAIN-SUFFIX,bloomberg.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,wsj.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,reuters.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,reddit.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,scholar.google.com,🌍 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,perplexity.ai,🌍 Bloomberg WSJ Reuters Select
 
 # OpenAI
 DOMAIN-SUFFIX,openai.com,🌍 OpenAI Select
+
 
 # 德国
 DOMAIN-SUFFIX,prosieben.de,🇩🇪 MESL DE Select
