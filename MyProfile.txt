@@ -17,15 +17,19 @@ test-timeout = 3
 geoip-maxmind-url = https://fastly.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb
 #
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 8.8.8.8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+
 # DNS
 # 三大运营商：114.114.114.114
 # 阿里云：223.5.5.5
 # 腾讯云：119.29.29.29
-dns-server = system, 119.29.29.29, 8.8.8.8, 1.1.1.1, 114.114.114.114, 223.5.5.5
+# 149.112.112.112 是quad9的
+dns-server = 1.1.1.1, 9.9.9.9, 149.112.112.112
+
 # 我设置的fake ip
 fake-ip-range = 198.18.0.1/16
 always-real-ip = stun.l.google.com
-doh-server = https://dns.cloudflare.com/dns-query, https://dns.alidns.com/dns-query
+
+doh-server = https://dns.cloudflare.com/dns-query, https://dns.quad9.net/dns-query
 
 [Proxy]
 JMS1 = ss, c10s1.portablesubmarines.com, 18786, encrypt-method=aes-256-gcm, password=rJEfr6SXmTLKFZzQ, udp-relay=true
