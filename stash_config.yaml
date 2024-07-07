@@ -8,25 +8,25 @@ redir-port: 7892
 mixed-port: 7893
 ipv6: true
 dns:
-    enable: true
-    ipv6: true
-    listen: '0.0.0.0:1053'
-    use-hosts: true
-    default-nameserver: [119.29.29.29, 8.8.8.8, 1.1.1.1]
-    nameserver: [223.5.5.5, 119.29.29.29]
-    fake-ip-range: 198.18.0.1/16
-    fake-ip-filter: ['*.lan', '*.localdomain', '*.example', '*.invalid', '*.localhost', '*.test', '*.local', '*.home.arpa', 'time.*.com', 'time.*.gov', 'time.*.edu.cn', 'time.*.apple.com', 'time1.*.com', 'time2.*.com', 'time3.*.com', 'time4.*.com', 'time5.*.com', 'time6.*.com', 'time7.*.com', 'ntp.*.com', 'ntp1.*.com', 'ntp2.*.com', 'ntp3.*.com', 'ntp4.*.com', 'ntp5.*.com', 'ntp6.*.com', 'ntp7.*.com', '*.time.edu.cn', '*.ntp.org.cn', +.pool.ntp.org, time1.cloud.tencent.com, 'stun.*.*', 'stun.*.*.*', swscan.apple.com, mesu.apple.com, music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, localhost.ptlogin2.qq.com, '*.msftconnecttest.com', '*.msftncsi.com', '*.xiami.com', '*.music.migu.cn', music.migu.cn, +.wotgame.cn, +.wggames.cn, +.wowsgame.cn, +.wargaming.net, '*.*.*.srv.nintendo.net', '*.*.stun.playstation.net', 'xbox.*.*.microsoft.com', '*.*.xboxlive.com', '*.ipv6.microsoft.com', 'teredo.*.*.*', 'teredo.*.*', speedtest.cros.wr.pvp.net, +.jjvip8.com, www.douyu.com, activityapi.huya.com, activityapi.huya.com.w.cdngslb.com, www.bilibili.com, api.bilibili.com, a.w.bilicdn1.com]
+  enable: true
+  ipv6: true
+  listen: '0.0.0.0:1053'
+  use-hosts: true
+  default-nameserver: [1.1.1.1, 9.9.9.9, 149.112.112.112]
+  nameserver: ['https://dns.quad9.net/dns-query', 'https://1.1.1.1/dns-query', 'https://dns.cloudflare.com/dns-query']
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter: ['*.lan', '*.localdomain', '*.example', '*.invalid', '*.localhost', '*.test', '*.local', '*.home.arpa', time.*.com, time.*.gov, time.*.edu.cn, time.*.apple.com, time1.*.com, time2.*.com, time3.*.com, time4.*.com, time5.*.com, time6.*.com, time7.*.com, ntp.*.com, ntp1.*.com, ntp2.*.com, ntp3.*.com, ntp4.*.com, ntp5.*.com, ntp6.*.com, ntp7.*.com, '*.time.edu.cn', '*.ntp.org.cn', +.pool.ntp.org, time1.cloud.tencent.com, stun.*.*, stun.*.*.*, swscan.apple.com, mesu.apple.com, music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, localhost.ptlogin2.qq.com, '*.msftconnecttest.com', '*.msftncsi.com', '*.xiami.com', '*.music.migu.cn', music.migu.cn, +.wotgame.cn, +.wggames.cn, +.wowsgame.cn, +.wargaming.net, '*.*.*.srv.nintendo.net', '*.*.stun.playstation.net', xbox.*.*.microsoft.com, '*.*.xboxlive.com', '*.ipv6.microsoft.com', teredo.*.*.*, teredo.*.*, speedtest.cros.wr.pvp.net, +.jjvip8.com, www.douyu.com, activityapi.huya.com, activityapi.huya.com.w.cdngslb.com, www.bilibili.com, api.bilibili.com, a.w.bilicdn1.com]
 external-controller: '127.0.0.1:9090'
 ####################
 proxies:
-  - { name: "🇺🇸 JMS1", type: ss, server: c10s1.portablesubmarines.com, port: 18786, cipher: aes-256-gcm, password: rJEfr6SXmTLKFZzQ, udp: true }
-  - { name: "🇺🇸 JMS2", type: ss, server: c10s2.portablesubmarines.com, port: 18786, cipher: aes-256-gcm, password: rJEfr6SXmTLKFZzQ, udp: true }
-  - { name: "🇺🇸 JMS3", type: vmess, server: c10s3.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0} # tls 必须false，否则无法连接
-  - { name: "🇯🇵 JMS4", type: vmess, server: c10s4.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
-  - { name: "🇳🇱 JMS5", type: vmess, server: c10s5.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
-  - { name: "🇺🇸 JMS6", type: vmess, server: c10s801.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
+  - {name: "🇺🇸 JMS1", type: ss, server: c10s1.portablesubmarines.com, port: 18786, cipher: aes-256-gcm, password: rJEfr6SXmTLKFZzQ, udp: true}
+  - {name: "🇺🇸 JMS2", type: ss, server: c10s2.portablesubmarines.com, port: 18786, cipher: aes-256-gcm, password: rJEfr6SXmTLKFZzQ, udp: true}
+  - {name: "🇺🇸 JMS3", type: vmess, server: c10s3.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0} # tls 必须false，否则无法连接
+  - {name: "🇯🇵 JMS4", type: vmess, server: c10s4.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
+  - {name: "🇳🇱 JMS5", type: vmess, server: c10s5.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
+  - {name: "🇺🇸 JMS6", type: vmess, server: c10s801.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
 proxy-providers:
-  provider1: 
+  provider1:
     url: https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb
     inteval: 3600
 proxy-groups:
@@ -61,7 +61,7 @@ proxy-groups:
       - "🇺🇸 MESL US Select"
       - 🚀 节点选择
     type: select
-    interval: 60 
+    interval: 60
   - name: "🌍 BBC Select"
     proxies:
       - 🚀 节点选择
@@ -167,8 +167,7 @@ proxy-groups:
   - name: 🇩🇪 德国网站
     proxies:
       - "🇩🇪 MESL DE Select"
-    type: select  
-
+    type: select
 rules:
   - DOMAIN-SUFFIX,channel4.com,🌍 BBC Select
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 BBC Select
@@ -185,7 +184,7 @@ rules:
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 BBC Select
   - DOMAIN-KEYWORD,uk-live,🌍 BBC Select
   - DOMAIN-SUFFIX,bbc.co.uk,🌍 BBC Select
-  - DOMAIN-SUFFIX,bbc.co,🌍 BBC Select 
+  - DOMAIN-SUFFIX,bbc.co,🌍 BBC Select
   - DOMAIN-SUFFIX,bbc.com,🌍 BBC Select # 比如 BBC中文网
   - DOMAIN-SUFFIX,bbci.co,🌍 BBC Select # BBC Sounds app会用到
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 BBC Select
@@ -199,7 +198,8 @@ rules:
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   #############################################
-#  - IP-CIDR,192.168.192.0/24,🚀 节点选择
+
+  #  - IP-CIDR,192.168.192.0/24,🚀 节点选择
   #############################################
   ######################################################
   - DOMAIN-SUFFIX,bloomberg.com,🌍 Bloomberg WSJ Reuters Select
@@ -247,9 +247,9 @@ rules:
   - DOMAIN-SUFFIX,access.clarivate.com,🎯 全球直连 # WOS
   - DOMAIN-SUFFIX,webofscience.clarivate.cn,🎯 全球直连 # WOS 
   - DOMAIN-SUFFIX,sciencedirect.com,🎯 全球直连 # sciencedirect
-#  - DOMAIN-SUFFIX,webofscience.com,DIRECT # WOS
-#  - DOMAIN-SUFFIX,access.clarivate.com,DIRECT # WOS
-#  - DOMAIN-SUFFIX,webofscience.clarivate.cn,DIRECT # WOS 
+  #  - DOMAIN-SUFFIX,webofscience.com,DIRECT # WOS
+  #  - DOMAIN-SUFFIX,access.clarivate.com,DIRECT # WOS
+  #  - DOMAIN-SUFFIX,webofscience.clarivate.cn,DIRECT # WOS 
   - DOMAIN-SUFFIX,nature.com,DIRECT # nature
   - DOMAIN-SUFFIX,ieee.org,DIRECT # IEEE
   - DOMAIN-SUFFIX,science.org,DIRECT # science magazine
@@ -279,7 +279,7 @@ rules:
   - DOMAIN-SUFFIX,asme.org,DIRECT # 美国机械工程师协会数据库
   - DOMAIN-SUFFIX,acm.org,DIRECT # 计算即学会
   - DOMAIN-SUFFIX,ietresearch.onlinelibrary.wiley.com,DIRECT # 计算即学会
-#  - DOMAIN-SUFFIX,aps.org,DIRECT # 美国物理学会
+  #  - DOMAIN-SUFFIX,aps.org,DIRECT # 美国物理学会
   - DOMAIN-SUFFIX,aps.org,🎯 全球直连 # 美国物理学会
   ####################################################################################
   ####################################################################################
@@ -2385,7 +2385,7 @@ rules:
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
-#  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
+  #  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
@@ -2444,8 +2444,7 @@ rules:
   - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
   - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
   - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
-
-######################################################
+  ######################################################
   - DOMAIN-SUFFIX,box.com,🚀 节点选择
   - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
   - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
@@ -2560,7 +2559,7 @@ rules:
   - DOMAIN-SUFFIX,medium.com,🚀 节点选择
   - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
   - DOMAIN-SUFFIX,quay.io,🚀 节点选择
-#  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
+  #  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
   - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
   - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
@@ -2764,7 +2763,6 @@ rules:
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
