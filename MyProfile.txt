@@ -74,6 +74,7 @@ DOMAIN-SUFFIX,bbci.co,🌍 BBC Select
 DOMAIN-SUFFIX,bbci.co.uk,🌍 BBC Select
 
 # Bloomberg， WSJ， Reuters,   Perplexity
+DOMAIN-SUFFIX,techcrunch.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,bloomberg.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,wsj.com,🌍 Bloomberg WSJ Reuters Select
 DOMAIN-SUFFIX,reuters.com,🌍 Bloomberg WSJ Reuters Select
