@@ -13,9 +13,12 @@ dns:
   listen: '0.0.0.0:1053'
   use-hosts: true
   default-nameserver: [1.1.1.1, 9.9.9.9, 149.112.112.112]
-  nameserver: ['https://dns.quad9.net/dns-query', 'https://1.1.1.1/dns-query', 'https://dns.cloudflare.com/dns-query']
+  nameserver: ['https://dns.cloudflare.com/dns-query', 'https://dns.google/dns-query', 'https://dns.alidns.com/dns-query']
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['*.lan', '*.localdomain', '*.example', '*.invalid', '*.localhost', '*.test', '*.local', '*.home.arpa', time.*.com, time.*.gov, time.*.edu.cn, time.*.apple.com, time1.*.com, time2.*.com, time3.*.com, time4.*.com, time5.*.com, time6.*.com, time7.*.com, ntp.*.com, ntp1.*.com, ntp2.*.com, ntp3.*.com, ntp4.*.com, ntp5.*.com, ntp6.*.com, ntp7.*.com, '*.time.edu.cn', '*.ntp.org.cn', +.pool.ntp.org, time1.cloud.tencent.com, stun.*.*, stun.*.*.*, swscan.apple.com, mesu.apple.com, music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, localhost.ptlogin2.qq.com, '*.msftconnecttest.com', '*.msftncsi.com', '*.xiami.com', '*.music.migu.cn', music.migu.cn, +.wotgame.cn, +.wggames.cn, +.wowsgame.cn, +.wargaming.net, '*.*.*.srv.nintendo.net', '*.*.stun.playstation.net', xbox.*.*.microsoft.com, '*.*.xboxlive.com', '*.ipv6.microsoft.com', teredo.*.*.*, teredo.*.*, speedtest.cros.wr.pvp.net, +.jjvip8.com, www.douyu.com, activityapi.huya.com, activityapi.huya.com.w.cdngslb.com, www.bilibili.com, api.bilibili.com, a.w.bilicdn1.com]
+  nameserver-policy:
+    blued.cn: dns.alidns.com/dns-query
+  follow-rule: null
 external-controller: '127.0.0.1:9090'
 ####################
 proxies:
@@ -26,7 +29,7 @@ proxies:
   - {name: "🇳🇱 JMS5", type: vmess, server: c10s5.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
   - {name: "🇺🇸 JMS6", type: vmess, server: c10s801.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
 proxy-providers:
-  provider1:
+  MESL:
     url: https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb
     inteval: 3600
 proxy-groups:
@@ -44,6 +47,8 @@ proxy-groups:
       - "🇺🇸 JMS1"
       - "🇺🇸 JMS2"
       - "🇺🇸 JMS3"
+      - 🇯🇵 JMS4
+      - 🇳🇱 JMS5
       - "🇺🇸 JMS6"
     type: select
   - name: "🇺🇸 JMS auto"
@@ -62,13 +67,21 @@ proxy-groups:
       - 🚀 节点选择
     type: select
     interval: 60
-  - name: "🌍 BBC Select"
+  - name: "🅱️ BBC Select"
     proxies:
       - 🚀 节点选择
       - "🇬🇧 MESL UK auto"
       - "🇬🇧 MESL UK Select"
     type: select
     interval: 60
+  - name: "🅿️ Prime Video"
+    proxies:
+      - 🇯🇵 JMS4
+      - 🇳🇱 JMS5 
+      - "🇬🇧 MESL UK auto"
+      - "🇺🇸 MESL US auto"
+      - 🇩🇪 MESL DE Select
+    type: select
   - name: "🌍 Bloomberg WSJ Reuters Auto"
     proxies:
       - "🇬🇧 MESL UK auto"
@@ -168,26 +181,112 @@ proxy-groups:
     proxies:
       - "🇩🇪 MESL DE Select"
     type: select
+  - name: 🌶️ 抖音
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - "🇺🇸 JMS auto"
+      - "🇩🇪 MESL DE Select"
+    type: select
 rules:
-  - DOMAIN-SUFFIX,channel4.com,🌍 BBC Select
-  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 BBC Select
-  - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 BBC Select
-  - DOMAIN,aod-hls-uk-live.akamaized.net,🌍 BBC Select
-  - DOMAIN,vod-dash-uk-live.akamaized.net,🌍 BBC Select
-  - DOMAIN,vod-thumb-uk-live.akamaized.net,🌍 BBC Select
-  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 BBC Select
-  - DOMAIN,hboasialive.akamaized.net,🌍 BBC Select
-  - DOMAIN,hbogoprod-vod.akamaized.net,🌍 BBC Select
-  - DOMAIN-KEYWORD,bbcfmt,🌍 BBC Select
-  - DOMAIN-SUFFIX,bbc.net.uk,🌍 BBC Select
-  - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 BBC Select
-  - DOMAIN-SUFFIX,bidi.net.uk,🌍 BBC Select
-  - DOMAIN-KEYWORD,uk-live,🌍 BBC Select
-  - DOMAIN-SUFFIX,bbc.co.uk,🌍 BBC Select
-  - DOMAIN-SUFFIX,bbc.co,🌍 BBC Select
-  - DOMAIN-SUFFIX,bbc.com,🌍 BBC Select # 比如 BBC中文网
-  - DOMAIN-SUFFIX,bbci.co,🌍 BBC Select # BBC Sounds app会用到
-  - DOMAIN-SUFFIX,bbci.co.uk,🌍 BBC Select
+  # Prime Video
+  - DOMAIN,primevideo.com,🅿️ Prime Video
+  - DOMAIN,unagi.amazon.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,media-amazon.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,ssl-images-amazon.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,fls-eu.amazon.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,unagi-na.amazon.com,🅿️ Prime Video
+  
+  - DOMAIN,atv-ps.amazon.com,🅿️ Prime Video
+  - DOMAIN,avodmp4s3ww-a.akamaihd.net,🅿️ Prime Video
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,d1xfray82862hr.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,d25xi40x97liuc.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,d27xxe7juh1us6.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,d3196yreox78o9.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🅿️ Prime Video
+  - DOMAIN,ktpx.amazon.com,🅿️ Prime Video
+  - DOMAIN-KEYWORD,avoddashs,🅿️ Prime Video
+  - DOMAIN-SUFFIX,aboutamazon.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,aiv-cdn.net,🅿️ Prime Video
+  - DOMAIN-SUFFIX,aiv-delivery.net,🅿️ Prime Video
+  - DOMAIN-SUFFIX,amazon.jobs,🅿️ Prime Video
+  - DOMAIN-SUFFIX,amazontools.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,amazonuniversity.jobs,🅿️ Prime Video
+  - DOMAIN-SUFFIX,amazonvideo.com,🅿️ Prime Video
+  - DOMAIN-SUFFIX,pv-cdn.net,🅿️ Prime Video
+  - DOMAIN-SUFFIX,seattlespheres.com,🅿️ Prime Video
+  - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🅿️ Prime Video
+  #tiktok 测试
+  #  - DOMAIN,p16-tiktokcdn-com.akamaized.net,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,byteoversea.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,ibytedtos.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,ibyteimg.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,ipstatp.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,muscdn.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,musical.ly,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,sgpstatp.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,snssdk.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,tik-tokapi.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,tiktok.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,tiktokcdn.com,🌶️ 抖音
+  #  - DOMAIN-SUFFIX,tiktokv.com,🌶️ 抖音
+  #  - DOMAIN-KEYWORD,-tiktokcdn-com,🌶️ 抖音
+  #  - USER-AGENT,TikTok*,🌶️ 抖音
+  ################
+  - DOMAIN-SUFFIX,zijieapi.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,ibytedapm.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,yhgfb-cn-static.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytegoofy.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,zjcdn.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyin.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyincdn.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyinvod.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyinpic.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyinstatic.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,idouyinvod.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,byteactivity.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytecdn.cn,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytecdn.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,byteeffecttos.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytegecko.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytegoofy.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,byteimg.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytescm.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytedance.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytemastatic.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytetos.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,byteacctimg.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytednsdoc.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytecc.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,amemv.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,snssdk.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,volcsiriusbd.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bdurl.net,🌶️ 抖音
+  - DOMAIN-SUFFIX,ipv6.google.com,DIRECT
+  - DOMAIN-SUFFIX,ipv6-test.com,DIRECT
+  - DOMAIN-SUFFIX,test-ipv6.com,DIRECT
+  - DOMAIN-SUFFIX,ipv6ready.me,DIRECT
+  - DOMAIN-SUFFIX,channel4.com,🅱️ BBC Select
+  - DOMAIN-KEYWORD,abematv.akamaized.net,🅱️ BBC Select
+  - DOMAIN,aod-dash-uk-live.akamaized.net,🅱️ BBC Select
+  - DOMAIN,aod-hls-uk-live.akamaized.net,🅱️ BBC Select
+  - DOMAIN,vod-dash-uk-live.akamaized.net,🅱️ BBC Select
+  - DOMAIN,vod-thumb-uk-live.akamaized.net,🅱️ BBC Select
+  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🅱️ BBC Select
+  - DOMAIN,hboasialive.akamaized.net,🅱️ BBC Select
+  - DOMAIN,hbogoprod-vod.akamaized.net,🅱️ BBC Select
+  - DOMAIN-KEYWORD,bbcfmt,🅱️ BBC Select
+  - DOMAIN-SUFFIX,bbc.net.uk,🅱️ BBC Select
+  - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🅱️ BBC Select
+  - DOMAIN-SUFFIX,bidi.net.uk,🅱️ BBC Select
+  - DOMAIN-KEYWORD,uk-live,🅱️ BBC Select
+  - DOMAIN-SUFFIX,bbc.co.uk,🅱️ BBC Select
+  - DOMAIN-SUFFIX,bbc.co,🅱️ BBC Select
+  - DOMAIN-SUFFIX,bbc.com,🅱️ BBC Select # 比如 BBC中文网
+  - DOMAIN-SUFFIX,bbci.co,🅱️ BBC Select # BBC Sounds app会用到
+  - DOMAIN-SUFFIX,bbci.co.uk,🅱️ BBC Select
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
@@ -197,11 +296,10 @@ rules:
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
-  #############################################
-
   #  - IP-CIDR,192.168.192.0/24,🚀 节点选择
   #############################################
   ######################################################
+  - DOMAIN-SUFFIX,techcrunch.com,🌍 Bloomberg WSJ Reuters Select
   - DOMAIN-SUFFIX,bloomberg.com,🌍 Bloomberg WSJ Reuters Select
   - DOMAIN-SUFFIX,wsj.com,🌍 Bloomberg WSJ Reuters Select
   - DOMAIN-SUFFIX,reuters.com,🌍 Bloomberg WSJ Reuters Select
@@ -2014,6 +2112,7 @@ rules:
   - DOMAIN-SUFFIX,assets-yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
+  - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
@@ -2139,7 +2238,6 @@ rules:
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
@@ -3585,3 +3683,5 @@ rules:
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+http:
+  url-rewrite: []
