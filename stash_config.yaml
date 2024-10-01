@@ -77,7 +77,9 @@ proxy-groups:
   - name: "🅿️ Prime Video"
     proxies:
       - 🇯🇵 JMS4
-      - 🇳🇱 JMS5 
+      - 🇳🇱 JMS5
+      - "🇺🇸 JMS auto"
+      - "🇺🇸 JMS" 
       - "🇬🇧 MESL UK auto"
       - "🇺🇸 MESL US auto"
       - 🇩🇪 MESL DE Select
