@@ -29,7 +29,7 @@ dns-server = 9.9.9.9, 149.112.112.112, 1.1.1.1
 fake-ip-range = 198.18.0.1/16
 always-real-ip = stun.l.google.com
 
-doh-server = https://dns.quad9.net/dns-query, https://dns.cloudflare.com/dns-query
+doh-server = https://dns.alidns.com/dns-query, https://dns.cloudflare.com/dns-query, https://dns.google/dns-query
 
 [Proxy]
 JMS1 = ss, c10s1.portablesubmarines.com, 18786, encrypt-method=aes-256-gcm, password=rJEfr6SXmTLKFZzQ, udp-relay=true
@@ -51,8 +51,40 @@ JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731
 🌍 BBC Select		= select, 🚀 节点选择, 🇬🇧 MESL UK auto, 🇬🇧 MESL UK Select
 🌍 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
 🌍 Bloomberg WSJ Reuters Select = select, 🇺🇸 MESL US auto, 🇬🇧 MESL UK auto,  🌍 Bloomberg WSJ Reuters Auto, 🇬🇧 MESL UK Select
+🌶️ 抖音		= select, 🚀 节点选择, 🇺🇸 JMS Auto, 🇬🇧 MESL UK Select, 🇩🇪 MESL DE Select
 
 [Rule]
+# douyin
+DOMAIN-SUFFIX,zijieapi.com,🌶️ 抖音
+DOMAIN-SUFFIX,ibytedapm.com,🌶️ 抖音
+DOMAIN-SUFFIX,yhgfb-cn-static.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytegoofy.com,🌶️ 抖音
+DOMAIN-SUFFIX,zjcdn.com,🌶️ 抖音
+DOMAIN-SUFFIX,douyin.com,🌶️ 抖音
+DOMAIN-SUFFIX,douyincdn.com,🌶️ 抖音
+DOMAIN-SUFFIX,douyinvod.com,🌶️ 抖音
+DOMAIN-SUFFIX,douyinpic.com,🌶️ 抖音
+DOMAIN-SUFFIX,douyinstatic.com,🌶️ 抖音
+DOMAIN-SUFFIX,idouyinvod.com,🌶️ 抖音
+DOMAIN-SUFFIX,byteactivity.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytecdn.cn,🌶️ 抖音
+DOMAIN-SUFFIX,bytecdn.com,🌶️ 抖音
+DOMAIN-SUFFIX,byteeffecttos.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytegecko.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytegoofy.com,🌶️ 抖音
+DOMAIN-SUFFIX,byteimg.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytescm.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytedance.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytemastatic.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytetos.com,🌶️ 抖音
+DOMAIN-SUFFIX,byteacctimg.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytednsdoc.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytecc.com,🌶️ 抖音
+DOMAIN-SUFFIX,amemv.com,🌶️ 抖音
+DOMAIN-SUFFIX,snssdk.com,🌶️ 抖音
+DOMAIN-SUFFIX,volcsiriusbd.com,🌶️ 抖音
+DOMAIN-SUFFIX,bdurl.net,🌶️ 抖音
+
 # BBC
 DOMAIN-KEYWORD,abematv.akamaized.net,🌍 BBC Select
 DOMAIN,aod-dash-uk-live.akamaized.net,🌍 BBC Select
