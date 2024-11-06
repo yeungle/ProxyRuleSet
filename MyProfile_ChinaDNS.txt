@@ -29,7 +29,7 @@ dns-server = 9.9.9.9, 149.112.112.112, 1.1.1.1
 fake-ip-range = 198.18.0.1/16
 always-real-ip = stun.l.google.com
 
-doh-server = https://dns.alidns.com/dns-query, https://dns.cloudflare.com/dns-query, https://dns.google/dns-query
+doh-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query
 
 [Proxy]
 JMS1 = ss, c10s1.portablesubmarines.com, 18786, encrypt-method=aes-256-gcm, password=rJEfr6SXmTLKFZzQ, udp-relay=true
@@ -41,7 +41,7 @@ JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731
 
 [Proxy Group]
 🚀 节点选择 = select, 🇺🇸 JMS Auto, 🇺🇸 JMS Select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, DIRECT
-🇺🇸 JMS Auto 			= url-test, JMS1, JMS2, JMS3, JMS6
+🇺🇸 JMS Auto 			= url-test, JMS1, JMS2, JMS3, JMS6, interval=60
 🇺🇸 JMS Select 		= select,  JMS1, JMS2, JMS3, JMS6
 🇺🇸 MESL US auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
 🇬🇧 MESL UK auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
@@ -52,9 +52,50 @@ JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731
 🌍 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
 🌍 Bloomberg WSJ Reuters Select = select, 🇺🇸 MESL US auto, 🇬🇧 MESL UK auto,  🌍 Bloomberg WSJ Reuters Auto, 🇬🇧 MESL UK Select
 🌶️ 抖音		= select, 🚀 节点选择, 🇺🇸 JMS Auto, 🇬🇧 MESL UK Select, 🇩🇪 MESL DE Select
+🅿️ Prime Video = select,  🚀 节点选择, JMS4, JMS5, 🇺🇸 JMS Auto, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, 🇩🇪 MESL DE Select
 
 [Rule]
+# Prime video
+DOMAIN,pop-ca-cf.dash.pv-cdn.net,🅿️ Prime Video
+DOMAIN,primevideo.com,🅿️ Prime Video
+DOMAIN,unagi.amazon.com,🅿️ Prime Video
+DOMAIN-SUFFIX,media-amazon.com,🅿️ Prime Video
+DOMAIN-SUFFIX,ssl-images-amazon.com,🅿️ Prime Video
+DOMAIN-SUFFIX,fls-eu.amazon.com,🅿️ Prime Video
+DOMAIN-SUFFIX,unagi-na.amazon.com,🅿️ Prime Video
+DOMAIN,atv-ps.amazon.com,🅿️ Prime Video
+DOMAIN,avodmp4s3ww-a.akamaihd.net,🅿️ Prime Video
+DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🅿️ Prime Video
+DOMAIN,d1xfray82862hr.cloudfront.net,🅿️ Prime Video
+DOMAIN,d22qjgkvxw22r6.cloudfront.net,🅿️ Prime Video
+DOMAIN,d25xi40x97liuc.cloudfront.net,🅿️ Prime Video
+DOMAIN,d27xxe7juh1us6.cloudfront.net,🅿️ Prime Video
+DOMAIN,d3196yreox78o9.cloudfront.net,🅿️ Prime Video
+DOMAIN,dmqdd6hw24ucf.cloudfront.net,🅿️ Prime Video
+DOMAIN,ktpx.amazon.com,🅿️ Prime Video
+DOMAIN-KEYWORD,avoddashs,🅿️ Prime Video
+DOMAIN-SUFFIX,aboutamazon.com,🅿️ Prime Video
+DOMAIN-SUFFIX,aiv-cdn.net,🅿️ Prime Video
+DOMAIN-SUFFIX,aiv-delivery.net,🅿️ Prime Video
+DOMAIN-SUFFIX,amazon.jobs,🅿️ Prime Video
+DOMAIN-SUFFIX,amazontools.com,🅿️ Prime Video
+DOMAIN-SUFFIX,amazonuniversity.jobs,🅿️ Prime Video
+DOMAIN-SUFFIX,amazonvideo.com,🅿️ Prime Video
+DOMAIN-SUFFIX,pv-cdn.net,🅿️ Prime Video
+DOMAIN-SUFFIX,seattlespheres.com,🅿️ Prime Video
+
 # douyin
+DOMAIN-SUFFIX,asiad.byteactivity.com,🌶️ 抖音
+DOMAIN-SUFFIX,asiad.byteactivity12.com,🌶️ 抖音
+DOMAIN-SUFFIX,pstatp.com,🌶️ 抖音
+DOMAIN-SUFFIX,douyinivod.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytemaimg.com,🌶️ 抖音
+DOMAIN-SUFFIX,feelgood.cn,🌶️ 抖音
+DOMAIN-SUFFIX,douyinliving.com,🌶️ 抖音
+DOMAIN-SUFFIX,bytetcc.com,🌶️ 抖音
+DOMAIN-SUFFIX,byted-static.com,🌶️ 抖音
+DOMAIN-SUFFIX,ndcpp.com,🌶️ 抖音
+DOMAIN-SUFFIX,applogcdn.com,🌶️ 抖音
 DOMAIN-SUFFIX,zijieapi.com,🌶️ 抖音
 DOMAIN-SUFFIX,ibytedapm.com,🌶️ 抖音
 DOMAIN-SUFFIX,yhgfb-cn-static.com,🌶️ 抖音
@@ -71,7 +112,6 @@ DOMAIN-SUFFIX,bytecdn.cn,🌶️ 抖音
 DOMAIN-SUFFIX,bytecdn.com,🌶️ 抖音
 DOMAIN-SUFFIX,byteeffecttos.com,🌶️ 抖音
 DOMAIN-SUFFIX,bytegecko.com,🌶️ 抖音
-DOMAIN-SUFFIX,bytegoofy.com,🌶️ 抖音
 DOMAIN-SUFFIX,byteimg.com,🌶️ 抖音
 DOMAIN-SUFFIX,bytescm.com,🌶️ 抖音
 DOMAIN-SUFFIX,bytedance.com,🌶️ 抖音
