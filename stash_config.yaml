@@ -79,7 +79,7 @@ proxy-groups:
       - 🇯🇵 JMS4
       - 🇳🇱 JMS5
       - "🇺🇸 JMS auto"
-      - "🇺🇸 JMS" 
+      - "🇺🇸 JMS"
       - "🇬🇧 MESL UK auto"
       - "🇺🇸 MESL US auto"
       - 🇩🇪 MESL DE Select
@@ -190,15 +190,24 @@ proxy-groups:
       - "🇺🇸 JMS auto"
       - "🇩🇪 MESL DE Select"
     type: select
+  - name: 🎹 TikTok
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - "🇺🇸 JMS auto"
+      - "🇩🇪 MESL DE Select"
+      - "🇬🇧 MESL UK auto"
+      - "🇺🇸 MESL US auto"
+    type: select
 rules:
   # Prime Video
+  - DOMAIN,pop-ca-cf.dash.pv-cdn.net,🅿️ Prime Video
   - DOMAIN,primevideo.com,🅿️ Prime Video
   - DOMAIN,unagi.amazon.com,🅿️ Prime Video
   - DOMAIN-SUFFIX,media-amazon.com,🅿️ Prime Video
   - DOMAIN-SUFFIX,ssl-images-amazon.com,🅿️ Prime Video
   - DOMAIN-SUFFIX,fls-eu.amazon.com,🅿️ Prime Video
   - DOMAIN-SUFFIX,unagi-na.amazon.com,🅿️ Prime Video
-  
   - DOMAIN,atv-ps.amazon.com,🅿️ Prime Video
   - DOMAIN,avodmp4s3ww-a.akamaihd.net,🅿️ Prime Video
   - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🅿️ Prime Video
@@ -220,7 +229,14 @@ rules:
   - DOMAIN-SUFFIX,pv-cdn.net,🅿️ Prime Video
   - DOMAIN-SUFFIX,seattlespheres.com,🅿️ Prime Video
   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🅿️ Prime Video
-  #tiktok 测试
+  #tiktok 
+  - DOMAIN-KEYWORD,-tiktokcdn-com,🎹 TikTok
+  - DOMAIN-SUFFIX,musical.ly,🎹 TikTok
+  - DOMAIN-SUFFIX,tik-tokapi.com,🎹 TikTok
+  - DOMAIN-SUFFIX,tiktok.com,🎹 TikTok
+  - DOMAIN-SUFFIX,tiktokcdn.com,🎹 TikTok
+  - DOMAIN-SUFFIX,tiktokv.com,🎹 TikTok
+  - DOMAIN-SUFFIX,tiktokcdn-us.com,🎹 TikTok
   #  - DOMAIN,p16-tiktokcdn-com.akamaized.net,🌶️ 抖音
   #  - DOMAIN-SUFFIX,byteoversea.com,🌶️ 抖音
   #  - DOMAIN-SUFFIX,ibytedtos.com,🌶️ 抖音
@@ -237,6 +253,18 @@ rules:
   #  - DOMAIN-KEYWORD,-tiktokcdn-com,🌶️ 抖音
   #  - USER-AGENT,TikTok*,🌶️ 抖音
   ################
+  - DOMAIN-SUFFIX,asiad.byteactivity.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,asiad.byteactivity12.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,pstatp.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyinivod.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytemaimg.com,🌶️ 抖音
+  #--------
+  - DOMAIN-SUFFIX,feelgood.cn,🌶️ 抖音
+  - DOMAIN-SUFFIX,douyinliving.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,bytetcc.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,byted-static.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,ndcpp.com,🌶️ 抖音
+  - DOMAIN-SUFFIX,applogcdn.com,🌶️ 抖音
   - DOMAIN-SUFFIX,zijieapi.com,🌶️ 抖音
   - DOMAIN-SUFFIX,ibytedapm.com,🌶️ 抖音
   - DOMAIN-SUFFIX,yhgfb-cn-static.com,🌶️ 抖音
@@ -253,7 +281,6 @@ rules:
   - DOMAIN-SUFFIX,bytecdn.com,🌶️ 抖音
   - DOMAIN-SUFFIX,byteeffecttos.com,🌶️ 抖音
   - DOMAIN-SUFFIX,bytegecko.com,🌶️ 抖音
-  - DOMAIN-SUFFIX,bytegoofy.com,🌶️ 抖音
   - DOMAIN-SUFFIX,byteimg.com,🌶️ 抖音
   - DOMAIN-SUFFIX,bytescm.com,🌶️ 抖音
   - DOMAIN-SUFFIX,bytedance.com,🌶️ 抖音
@@ -301,6 +328,7 @@ rules:
   #  - IP-CIDR,192.168.192.0/24,🚀 节点选择
   #############################################
   ######################################################
+  - DOMAIN-SUFFIX,loc.gov,🌍 Bloomberg WSJ Reuters Select
   - DOMAIN-SUFFIX,techcrunch.com,🌍 Bloomberg WSJ Reuters Select
   - DOMAIN-SUFFIX,bloomberg.com,🌍 Bloomberg WSJ Reuters Select
   - DOMAIN-SUFFIX,wsj.com,🌍 Bloomberg WSJ Reuters Select
@@ -311,15 +339,7 @@ rules:
   ####################################################################################
   ####################################################################################
   ####################################################################################
-  - DOMAIN-SUFFIX,asiad.byteactivity.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,asiad.byteactivity12.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,amemv.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,douyinpic.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,zijieapi.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,bytednsdoc.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,pstatp.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,douyinivod.com,🏠 直连或代理 # 抖音
-  - DOMAIN-SUFFIX,bytemaimg.com,🏠 直连或代理 # 抖音
+
   - DOMAIN-SUFFIX,jiemian.com,🏠 直连或代理 # 界面新闻app
   - DOMAIN-SUFFIX,mob.com,🛑 全球拦截 # 澎湃新闻app里，掌淘科技
   - DOMAIN-SUFFIX,thepaper.cn,🏠 直连或代理 # 澎湃新闻app
@@ -2430,16 +2450,10 @@ rules:
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,-tiktokcdn-com,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
   - DOMAIN-SUFFIX,muscdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,musical.ly,🌍 国外媒体
-  - DOMAIN-SUFFIX,tik-tokapi.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,tiktok.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
   - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
   - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
@@ -2977,17 +2991,14 @@ rules:
   - DOMAIN-SUFFIX,battle.net,🎯 全球直连
   - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
   - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bytedance.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytedance.net,🎯 全球直连
   - DOMAIN-SUFFIX,bytedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,byteimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,feiliao.com,🎯 全球直连
   - DOMAIN-SUFFIX,gifshow.com,🎯 全球直连
   - DOMAIN-SUFFIX,huoshan.com,🎯 全球直连
   - DOMAIN-SUFFIX,iesdouyin.com,🎯 全球直连
   - DOMAIN-SUFFIX,ixigua.com,🎯 全球直连
   - DOMAIN-SUFFIX,kspkg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,pstatp.com,🎯 全球直连
   - DOMAIN-SUFFIX,snssdk.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao.com,🎯 全球直连
   - DOMAIN-SUFFIX,toutiao13.com,🎯 全球直连
