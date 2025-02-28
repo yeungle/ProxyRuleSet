@@ -13,7 +13,7 @@ dns:
   listen: '0.0.0.0:1053'
   use-hosts: true
   default-nameserver: [1.1.1.1, 9.9.9.9, 149.112.112.112]
-  nameserver: ['https://dns.cloudflare.com/dns-query', 'https://dns.google/dns-query', 'https://dns.alidns.com/dns-query']
+  nameserver: ['https://dns.cloudflare.com/dns-query', 'https://dns.google/dns-query', 'https://doh.pub/dns-query']
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['*.lan', '*.localdomain', '*.example', '*.invalid', '*.localhost', '*.test', '*.local', '*.home.arpa', time.*.com, time.*.gov, time.*.edu.cn, time.*.apple.com, time1.*.com, time2.*.com, time3.*.com, time4.*.com, time5.*.com, time6.*.com, time7.*.com, ntp.*.com, ntp1.*.com, ntp2.*.com, ntp3.*.com, ntp4.*.com, ntp5.*.com, ntp6.*.com, ntp7.*.com, '*.time.edu.cn', '*.ntp.org.cn', +.pool.ntp.org, time1.cloud.tencent.com, stun.*.*, stun.*.*.*, swscan.apple.com, mesu.apple.com, music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, localhost.ptlogin2.qq.com, '*.msftconnecttest.com', '*.msftncsi.com', '*.xiami.com', '*.music.migu.cn', music.migu.cn, +.wotgame.cn, +.wggames.cn, +.wowsgame.cn, +.wargaming.net, '*.*.*.srv.nintendo.net', '*.*.stun.playstation.net', xbox.*.*.microsoft.com, '*.*.xboxlive.com', '*.ipv6.microsoft.com', teredo.*.*.*, teredo.*.*, speedtest.cros.wr.pvp.net, +.jjvip8.com, www.douyu.com, activityapi.huya.com, activityapi.huya.com.w.cdngslb.com, www.bilibili.com, api.bilibili.com, a.w.bilicdn1.com]
   nameserver-policy:
@@ -24,7 +24,7 @@ external-controller: '127.0.0.1:9090'
 proxies:
   - {name: "🇺🇸 JMS1", type: ss, server: c10s1.portablesubmarines.com, port: 18786, cipher: aes-256-gcm, password: rJEfr6SXmTLKFZzQ, udp: true}
   - {name: "🇺🇸 JMS2", type: ss, server: c10s2.portablesubmarines.com, port: 18786, cipher: aes-256-gcm, password: rJEfr6SXmTLKFZzQ, udp: true}
-  - {name: "🇺🇸 JMS3", type: vmess, server: c10s3.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0} # tls 必须false，否则无法连接
+  - {name: "🇺🇸 JMS3", type: vmess, server: c10s3.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0} # 默认是tcp，tls 必须false。开启tcp+tls，变成true
   - {name: "🇯🇵 JMS4", type: vmess, server: c10s4.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
   - {name: "🇳🇱 JMS5", type: vmess, server: c10s5.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
   - {name: "🇺🇸 JMS6", type: vmess, server: c10s801.portablesubmarines.com, port: 18786, cipher: aes-128-gcm, uuid: f822d020-fa2d-4731-80ed-6a333d656b7c, skip-cert-verify: false, tls: false, alterId: 0}
@@ -61,6 +61,7 @@ proxy-groups:
   - name: "🩷 Google Scholar Select"
     proxies:
       - "🌍 0.2 计费流量"
+      - "🇺🇸 MESL US auto"
       - "🚀 节点选择"
     type: select
     interval: 60
@@ -211,6 +212,14 @@ proxy-groups:
       - "🇩🇪 MESL DE Select"
     type: select
 rules:
+  - DOMAIN-SUFFIX,hpcwire.com,🌍 Bloomberg WSJ Reuters Select
+  # Pluto TV
+  - DOMAIN-SUFFIX,pluto.tv,🚀 节点选择
+  - DOMAIN-SUFFIX,youboranqs01.com,🚀 节点选择
+  - DOMAIN-SUFFIX,plutotv.net,🚀 节点选择
+  # 营销标签嵌入到网页
+  - DOMAIN-SUFFIX,googletagmanager.com,🚀 节点选择
+  - DOMAIN-SUFFIX,tags.tiqcdn.com,🚀 节点选择
   # Google Scholar
   - DOMAIN-SUFFIX,scholar.google.com,🩷 Google Scholar Select
   # Prime Video
@@ -375,6 +384,21 @@ rules:
   - DOMAIN-SUFFIX,peopleapp.com,🏠 直连或代理 # 人民日报
   - DOMAIN-SUFFIX,yicai.com,🏠 直连或代理 # 第一财经
   - DOMAIN-SUFFIX,openai.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,chatgpt.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,inquiry.withpersona.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,openai.org,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,prodregistryv2.org,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,featureassets.org ,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,mapbox.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,oaistatic.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,api.atlassian.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,api.onedrive.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,api.stripe.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,livekit.io,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,googleapis.com,🌍 OpenAI Select
+  - DOMAIN-SUFFIX,statsigapi.net,🌍 OpenAI Select
   - DOMAIN-SUFFIX,webofscience.com,🎯 全球直连 # WOS
   - DOMAIN-SUFFIX,access.clarivate.com,🎯 全球直连 # WOS
   - DOMAIN-SUFFIX,webofscience.clarivate.cn,🎯 全球直连 # WOS 
@@ -2103,7 +2127,6 @@ rules:
   - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
   - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
