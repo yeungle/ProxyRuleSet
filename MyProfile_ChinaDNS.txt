@@ -40,19 +40,20 @@ JMS5 = vmess, c10s5.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-8
 JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-80ed-6a333d656b7c, tls=false, skip-cert-verify=false, alterId=0
 
 [Proxy Group]
-🚀 节点选择 = select, 🇺🇸 JMS Auto, 🇺🇸 JMS Select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, DIRECT
+🚀 Node-Select = select, 🇺🇸 JMS Auto, 🇺🇸 JMS Select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, DIRECT
 🇺🇸 JMS Auto 			= url-test, JMS1, JMS2, JMS3, JMS6, interval=60
 🇺🇸 JMS Select 		= select,  JMS1, JMS2, JMS3, JMS6
+🇺🇸 MESL US Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
 🇺🇸 MESL US auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
 🇬🇧 MESL UK auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
 🇬🇧 MESL UK Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
 🇩🇪 MESL DE Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*DE.*, interval=300, tolerance=50
-🌍 OpenAI Select		= select, 🚀 节点选择, 🇺🇸 JMS Auto, 🇺🇸 MESL US auto
-🌍 BBC Select		= select, 🚀 节点选择, 🇬🇧 MESL UK auto, 🇬🇧 MESL UK Select
+🌍 OpenAI Select		= select, 🚀 Node-Select, 🇺🇸 JMS Auto, 🇺🇸 MESL US Select
+🌍 BBC Select		= select, 🚀 Node-Select, 🇬🇧 MESL UK auto, 🇬🇧 MESL UK Select
 🌍 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
 🌍 Bloomberg WSJ Reuters Select = select, 🇺🇸 MESL US auto, 🇬🇧 MESL UK auto,  🌍 Bloomberg WSJ Reuters Auto, 🇬🇧 MESL UK Select
-🌶️ 抖音		= select, 🚀 节点选择, 🇺🇸 JMS Auto, 🇬🇧 MESL UK Select, 🇩🇪 MESL DE Select
-🅿️ Prime Video = select,  🚀 节点选择, JMS4, JMS5, 🇺🇸 JMS Auto, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, 🇩🇪 MESL DE Select
+🌶️ 抖音		= select, 🚀 Node-Select, 🇺🇸 JMS Auto, 🇬🇧 MESL UK Select, 🇩🇪 MESL DE Select
+🅿️ Prime Video = select,  🚀 Node-Select, JMS4, JMS5, 🇺🇸 JMS Auto, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, 🇩🇪 MESL DE Select
 
 [Rule]
 # Prime video
@@ -156,6 +157,21 @@ DOMAIN-SUFFIX,perplexity.ai,🌍 Bloomberg WSJ Reuters Select
 
 # OpenAI
 DOMAIN-SUFFIX,openai.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,chatgpt.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,inquiry.withpersona.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,openai.org,🌍 OpenAI Select
+DOMAIN-SUFFIX,browser-intake-datadoghq.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,prodregistryv2.org,🌍 OpenAI Select
+DOMAIN-SUFFIX,featureassets.org,🌍 OpenAI Select
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 OpenAI Select
+DOMAIN-SUFFIX,mapbox.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,oaistatic.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,api.atlassian.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,api.onedrive.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,api.stripe.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,livekit.io,🌍 OpenAI Select
+DOMAIN-SUFFIX,googleapis.com,🌍 OpenAI Select
+DOMAIN-SUFFIX,statsigapi.net,🌍 OpenAI Select
 
 
 # 德国
@@ -182,83 +198,83 @@ DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net,🇩🇪 MESL DE Select
 DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 MESL DE Select
 
 # Amazon
-DOMAIN-SUFFIX,amazon.dev,🚀 节点选择
-DOMAIN-SUFFIX,amazonvideo.com,🚀 节点选择
+DOMAIN-SUFFIX,amazon.dev,🚀 Node-Select
+DOMAIN-SUFFIX,amazonvideo.com,🚀 Node-Select
 # 来自freeve
 DOMAIN-SUFFIX,branch.io,REJECT
 # 上述必须拒绝
-DOMAIN-SUFFIX,aiv-delivery.net,🚀 节点选择
-DOMAIN-SUFFIX,amazon.com,🚀 节点选择
-DOMAIN,atv-ps.amazon.com,🚀 节点选择
-DOMAIN,ktpx.amazon.com,🚀 节点选择
-DOMAIN-SUFFIX,media-amazon.com,🚀 节点选择
+DOMAIN-SUFFIX,aiv-delivery.net,🚀 Node-Select
+DOMAIN-SUFFIX,amazon.com,🚀 Node-Select
+DOMAIN,atv-ps.amazon.com,🚀 Node-Select
+DOMAIN,ktpx.amazon.com,🚀 Node-Select
+DOMAIN-SUFFIX,media-amazon.com,🚀 Node-Select
 
 # Apple
-DOMAIN-SUFFIX,appsto.re,🚀 节点选择
-DOMAIN-SUFFIX,s.mzstatic.com,🚀 节点选择
-DOMAIN,gspe1-ssl.ls.apple.com,🚀 节点选择
-DOMAIN,news-events.apple.com,🚀 节点选择
-DOMAIN,news-client.apple.com,🚀 节点选择
-DOMAIN-SUFFIX,itunes.apple.com,🚀 节点选择
-DOMAIN-SUFFIX,lookup-api.apple.com,🚀 节点选择
+DOMAIN-SUFFIX,appsto.re,🚀 Node-Select
+DOMAIN-SUFFIX,s.mzstatic.com,🚀 Node-Select
+DOMAIN,gspe1-ssl.ls.apple.com,🚀 Node-Select
+DOMAIN,news-events.apple.com,🚀 Node-Select
+DOMAIN,news-client.apple.com,🚀 Node-Select
+DOMAIN-SUFFIX,itunes.apple.com,🚀 Node-Select
+DOMAIN-SUFFIX,lookup-api.apple.com,🚀 Node-Select
 DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
 DOMAIN-SUFFIX,mzstatic.com,DIRECT
 
 # Facebook
-DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,facebook.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,facebook.net,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,fb.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,fb.me,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,instagram.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,whatsapp.net,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,whatsapp.com,🚀 节点选择,force-remote-dns
+DOMAIN-SUFFIX,cdninstagram.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,facebook.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,facebook.net,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,fb.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,fb.me,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,instagram.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.net,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.com,🚀 Node-Select,force-remote-dns
 
 # Twitter
-DOMAIN-SUFFIX,t.co,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,twimg.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,twitter.com,🚀 节点选择,force-remote-dns
+DOMAIN-SUFFIX,t.co,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,twitter.com,🚀 Node-Select,force-remote-dns
 
 # Google
-DOMAIN-SUFFIX,ampproject.com,🚀 节点选择
-DOMAIN-SUFFIX,ampproject.net,🚀 节点选择
-DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
-DOMAIN-SUFFIX,android.com,🚀 节点选择
-DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
-DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
-DOMAIN-SUFFIX,g.co,🚀 节点选择
-DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
-DOMAIN-SUFFIX,goo.gl,🚀 节点选择
-DOMAIN-SUFFIX,googleusercontent.com,🚀 节点选择
-DOMAIN-SUFFIX,googlevideo.com,🚀 节点选择
-DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
-DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
-DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
-DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
-DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
-DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
-DOMAIN-SUFFIX,youtu.be,🚀 节点选择
-DOMAIN-SUFFIX,youtube.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
-DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
-DOMAIN,accounts.google.com,🚀 节点选择,force-remote-dns,enhanced-mode
-DOMAIN-SUFFIX,appspot.com,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择,force-remote-dns,enhanced-mode
-DOMAIN-SUFFIX,googleapis.com,🚀 节点选择,force-remote-dns,enhanced-mode
-DOMAIN-SUFFIX,googlesource.com,🚀 节点选择,force-remote-dns,enhanced-mode
-DOMAIN-SUFFIX,google.com,🚀 节点选择,force-remote-dns,enhanced-mode
-DOMAIN-SUFFIX,gmail.com,🚀 节点选择,force-remote-dns
-DOMAIN-KEYWORD,google,🚀 节点选择,force-remote-dns
+DOMAIN-SUFFIX,ampproject.com,🚀 Node-Select
+DOMAIN-SUFFIX,ampproject.net,🚀 Node-Select
+DOMAIN-SUFFIX,ampproject.org,🚀 Node-Select
+DOMAIN-SUFFIX,android.com,🚀 Node-Select
+DOMAIN-SUFFIX,blogspot.com,🚀 Node-Select
+DOMAIN-SUFFIX,blogspot.hk,🚀 Node-Select
+DOMAIN-SUFFIX,g.co,🚀 Node-Select
+DOMAIN-SUFFIX,ggpht.com,🚀 Node-Select
+DOMAIN-SUFFIX,goo.gl,🚀 Node-Select
+DOMAIN-SUFFIX,googleusercontent.com,🚀 Node-Select
+DOMAIN-SUFFIX,googlevideo.com,🚀 Node-Select
+DOMAIN-SUFFIX,gstatic.com,🚀 Node-Select
+DOMAIN-SUFFIX,gstatic.cn,🚀 Node-Select
+DOMAIN-SUFFIX,gvt0.com,🚀 Node-Select
+DOMAIN-SUFFIX,gvt1.com,🚀 Node-Select
+DOMAIN-SUFFIX,gvt2.com,🚀 Node-Select
+DOMAIN-SUFFIX,gvt3.com,🚀 Node-Select
+DOMAIN-SUFFIX,youtu.be,🚀 Node-Select
+DOMAIN-SUFFIX,youtube.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,youtube-nocookie.com,🚀 Node-Select
+DOMAIN-SUFFIX,ytimg.com,🚀 Node-Select
+DOMAIN,accounts.google.com,🚀 Node-Select,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,appspot.com,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,googleapis.cn,🚀 Node-Select,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,googleapis.com,🚀 Node-Select,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,googlesource.com,🚀 Node-Select,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,google.com,🚀 Node-Select,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,gmail.com,🚀 Node-Select,force-remote-dns
+DOMAIN-KEYWORD,google,🚀 Node-Select,force-remote-dns
 
 # Netflix
-DOMAIN-SUFFIX,netflix.com,🚀 节点选择
-DOMAIN-SUFFIX,netflix.net,🚀 节点选择
-DOMAIN-SUFFIX,nflxext.com,🚀 节点选择
-DOMAIN-SUFFIX,nflximg.com,🚀 节点选择
-DOMAIN-SUFFIX,nflximg.net,🚀 节点选择
-DOMAIN-SUFFIX,nflxso.net,🚀 节点选择
-DOMAIN-SUFFIX,nflxvideo.net,🚀 节点选择
+DOMAIN-SUFFIX,netflix.com,🚀 Node-Select
+DOMAIN-SUFFIX,netflix.net,🚀 Node-Select
+DOMAIN-SUFFIX,nflxext.com,🚀 Node-Select
+DOMAIN-SUFFIX,nflximg.com,🚀 Node-Select
+DOMAIN-SUFFIX,nflximg.net,🚀 Node-Select
+DOMAIN-SUFFIX,nflxso.net,🚀 Node-Select
+DOMAIN-SUFFIX,nflxvideo.net,🚀 Node-Select
 
 # BAT
 DOMAIN-SUFFIX,baidu.com,DIRECT
@@ -321,220 +337,220 @@ DOMAIN-SUFFIX,zhimg.com,DIRECT
 DOMAIN,ip.bjango.com,DIRECT
 
 # Blocked
-DOMAIN-SUFFIX,9to5mac.com,🚀 节点选择
-DOMAIN-SUFFIX,abpchina.org,🚀 节点选择
-DOMAIN-SUFFIX,adblockplus.org,🚀 节点选择
-DOMAIN-SUFFIX,akamaihd.net,🚀 节点选择
-DOMAIN-SUFFIX,amazon.com,🚀 节点选择
-DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择,enhanced-mode
-DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
-DOMAIN-SUFFIX,angularjs.org,🚀 节点选择
-DOMAIN-SUFFIX,aol.com,🚀 节点选择
-DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
-DOMAIN-SUFFIX,arcgis.com,🚀 节点选择
-DOMAIN-SUFFIX,archive.org,🚀 节点选择
-DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
-DOMAIN-SUFFIX,att.com,🚀 节点选择
-DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
-DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
-DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
-DOMAIN-SUFFIX,bbc.com,🚀 节点选择
-DOMAIN-SUFFIX,bbc.co,🚀 节点选择
-DOMAIN-SUFFIX,bintray.com,🚀 节点选择,enhanced-mode
-DOMAIN-SUFFIX,bit.com,🚀 节点选择
-DOMAIN-SUFFIX,bit.ly,🚀 节点选择
-DOMAIN-SUFFIX,bitbucket.org,🚀 节点选择
-DOMAIN-SUFFIX,blog.com,🚀 节点选择
-DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
-DOMAIN-SUFFIX,blogger.com,🚀 节点选择
-DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
-DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
-DOMAIN-SUFFIX,box.net,🚀 节点选择
-DOMAIN-SUFFIX,box.com,🚀 节点选择
-DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
-DOMAIN-SUFFIX,chromium.org,🚀 节点选择
-DOMAIN-SUFFIX,cl.ly,🚀 节点选择
-DOMAIN-SUFFIX,cloudflare.com,🚀 节点选择
-DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
-DOMAIN-SUFFIX,cloudmagic.com,🚀 节点选择
-DOMAIN-SUFFIX,cnet.com,🚀 节点选择
-DOMAIN-SUFFIX,cocoapods.org,🚀 节点选择
-DOMAIN-SUFFIX,cocoapods.org,🚀 节点选择
-DOMAIN-SUFFIX,culturedcode.com,🚀 节点选择
-DOMAIN-SUFFIX,d.pr,🚀 节点选择
-DOMAIN-SUFFIX,dayone.me,🚀 节点选择
-DOMAIN-SUFFIX,digicert.com,🚀 节点选择
-DOMAIN-SUFFIX,discord.gg,🚀 节点选择
-DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
-DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
-DOMAIN-SUFFIX,disq.us,🚀 节点选择
-DOMAIN-SUFFIX,disqus.com,🚀 节点选择
-DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
-DOMAIN-SUFFIX,dnsimple.com,🚀 节点选择
-DOMAIN-SUFFIX,docker.com,🚀 节点选择
-DOMAIN-SUFFIX,dribbble.com,🚀 节点选择
-DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
-DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
-DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
-DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
-DOMAIN-SUFFIX,droplr.com,🚀 节点选择
-DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
-DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
-DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
-DOMAIN-SUFFIX,engadget.com,🚀 节点选择
-DOMAIN-SUFFIX,entrust.net,🚀 节点选择
-DOMAIN-SUFFIX,evernote.com,🚀 节点选择
-DOMAIN-SUFFIX,fabric.io,🚀 节点选择
-DOMAIN-SUFFIX,fastly.net,🚀 节点选择
-DOMAIN-SUFFIX,fc2.com,🚀 节点选择
-DOMAIN-SUFFIX,feedburner.com,🚀 节点选择
-DOMAIN-SUFFIX,feedly.com,🚀 节点选择
-DOMAIN-SUFFIX,feedsportal.com,🚀 节点选择
-DOMAIN-SUFFIX,flickr.com,🚀 节点选择
-DOMAIN-SUFFIX,gitbooks.io,🚀 节点选择
-DOMAIN-SUFFIX,git.io,🚀 节点选择
-DOMAIN-SUFFIX,github.com,🚀 节点选择,enhanced-mode
-DOMAIN-SUFFIX,github.io,🚀 节点选择
-DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
-DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择,enhanced-mode
-DOMAIN-SUFFIX,globalsign.com,🚀 节点选择
-DOMAIN-SUFFIX,gmodules.com,🚀 节点选择
-DOMAIN-SUFFIX,godaddy.com,🚀 节点选择
-DOMAIN-SUFFIX,golang.org,🚀 节点选择
-DOMAIN-SUFFIX,goodreaders.com,🚀 节点选择
-DOMAIN-SUFFIX,goodreads.com,🚀 节点选择
-DOMAIN-SUFFIX,graphql.org,🚀 节点选择
-DOMAIN-SUFFIX,gravatar.com,🚀 节点选择
-DOMAIN-SUFFIX,gumroad.com,🚀 节点选择
-DOMAIN-SUFFIX,heroku.com,🚀 节点选择
-DOMAIN-SUFFIX,herokucdn.com,🚀 节点选择
-DOMAIN-SUFFIX,hotmail.com,🚀 节点选择
-DOMAIN-SUFFIX,ift.tt,🚀 节点选择
-DOMAIN-SUFFIX,ifttt.com,🚀 节点选择
-DOMAIN-SUFFIX,imageshack.us,🚀 节点选择
-DOMAIN-SUFFIX,img.ly,🚀 节点选择
-DOMAIN-SUFFIX,imgur.com,🚀 节点选择
-DOMAIN-SUFFIX,instapaper.com,🚀 节点选择
-DOMAIN-SUFFIX,ipfs.io,🚀 节点选择
-DOMAIN-SUFFIX,ipn.li,🚀 节点选择
-DOMAIN-SUFFIX,is.gd,🚀 节点选择
-DOMAIN-SUFFIX,j.mp,🚀 节点选择
-DOMAIN-SUFFIX,jshint.com,🚀 节点选择
-DOMAIN-SUFFIX,kat.cr,🚀 节点选择
-DOMAIN-SUFFIX,libsyn.com,🚀 节点选择
-DOMAIN-SUFFIX,licdn.com,🚀 节点选择
-DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
-DOMAIN-SUFFIX,linode.com,🚀 节点选择
-DOMAIN-SUFFIX,lithium.com,🚀 节点选择
-DOMAIN-SUFFIX,littlehj.com,🚀 节点选择
-DOMAIN-SUFFIX,live.com,🚀 节点选择
-DOMAIN-SUFFIX,live.net,🚀 节点选择
-DOMAIN-SUFFIX,mathjax.org,🚀 节点选择
-DOMAIN-SUFFIX,medium.com,🚀 节点选择
-DOMAIN-SUFFIX,mega.co.nz,🚀 节点选择
-DOMAIN-SUFFIX,mega.nz,🚀 节点选择
-DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
-DOMAIN-SUFFIX,mobile01.com,🚀 节点选择
-DOMAIN-SUFFIX,modmyi.com,🚀 节点选择
-DOMAIN-SUFFIX,name.com,🚀 节点选择
-DOMAIN-SUFFIX,nextmedia.com,🚀 节点选择
-DOMAIN-SUFFIX,nintendo.com,🚀 节点选择
-DOMAIN-SUFFIX,nyti.ms,🚀 节点选择
-DOMAIN-SUFFIX,nytimes.com,🚀 节点选择
-DOMAIN-SUFFIX,nytimg.com,🚀 节点选择
-DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
-DOMAIN-SUFFIX,nyt.com,🚀 节点选择
-DOMAIN-SUFFIX,omnigroup.com,🚀 节点选择
-DOMAIN-SUFFIX,onenote.com,🚀 节点选择
-DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
-DOMAIN-SUFFIX,openwrt.org,🚀 节点选择
-DOMAIN-SUFFIX,ow.ly,🚀 节点选择
-DOMAIN-SUFFIX,pastebin.com,🚀 节点选择
-DOMAIN-SUFFIX,pandora.com,🚀 节点选择
-DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
-DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
-DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
-DOMAIN-SUFFIX,pinboard.in,🚀 节点选择
-DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
-DOMAIN-SUFFIX,pixiv.org,🚀 节点选择
-DOMAIN-SUFFIX,playpcesor.com,🚀 节点选择
-DOMAIN-SUFFIX,skype.com,🚀 节点选择
-DOMAIN-SUFFIX,slack.com,🚀 节点选择
-DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
-DOMAIN-SUFFIX,slack-msgs.com,🚀 节点选择
-DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
-DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
-DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
-DOMAIN-SUFFIX,sourceforge.net,🚀 节点选择,enhanced-mode
-DOMAIN-SUFFIX,sourceforge.io,🚀 节点选择,enhanced-mode
-DOMAIN-SUFFIX,speakerdeck.com,🚀 节点选择
-DOMAIN-SUFFIX,spotify.com,🚀 节点选择
-DOMAIN-SUFFIX,squarespace.com,🚀 节点选择
-DOMAIN-SUFFIX,sstatic.net,🚀 节点选择
-DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
-DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
-DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
-DOMAIN-SUFFIX,symauth.com,🚀 节点选择
-DOMAIN-SUFFIX,symcb.com,🚀 节点选择
-DOMAIN-SUFFIX,symcd.com,🚀 节点选择
-DOMAIN-SUFFIX,tapbots.com,🚀 节点选择
-DOMAIN-SUFFIX,tapbots.net,🚀 节点选择
-DOMAIN-SUFFIX,techcrunch.com,🚀 节点选择
-DOMAIN-SUFFIX,textnow.me,🚀 节点选择
-DOMAIN-SUFFIX,theinitium.com,🚀 节点选择
-DOMAIN-SUFFIX,telegram.org,🚀 节点选择
-DOMAIN-SUFFIX,telegram.me,🚀 节点选择
-DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
-DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
-DOMAIN-SUFFIX,t.me,🚀 节点选择
-DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
-DOMAIN-SUFFIX,tiny.cc,🚀 节点选择
-DOMAIN-SUFFIX,tinypic.com,🚀 节点选择
-DOMAIN-SUFFIX,tmblr.co,🚀 节点选择
-DOMAIN-SUFFIX,trello.com,🚀 节点选择
-DOMAIN-SUFFIX,trellocdn.com,🚀 节点选择
-DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
-DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
-DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
-DOMAIN-SUFFIX,typekit.net,🚀 节点选择
-DOMAIN-SUFFIX,ubnt.com,🚀 节点选择
-DOMAIN-SUFFIX,urchin.com,🚀 节点选择
-DOMAIN-SUFFIX,v.gd,🚀 节点选择
-DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
-DOMAIN-SUFFIX,vimeocdn.com,🚀 节点选择
-DOMAIN-SUFFIX,vine.co,🚀 节点选择
-DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
-DOMAIN-SUFFIX,vsco.co,🚀 节点选择
-DOMAIN-SUFFIX,w3schools.com,🚀 节点选择
-DOMAIN-SUFFIX,weather.com,🚀 节点选择
-DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
-DOMAIN-SUFFIX,wikipedia.com,🚀 节点选择
-DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
-DOMAIN-SUFFIX,windows.net,🚀 节点选择
-DOMAIN-SUFFIX,wordpress.com,🚀 节点选择
-DOMAIN-SUFFIX,wp.com,🚀 节点选择
-DOMAIN-SUFFIX,wsj.com,🚀 节点选择
-DOMAIN-SUFFIX,wsj.net,🚀 节点选择
-DOMAIN-SUFFIX,yahoo.com,🚀 节点选择
-DOMAIN-SUFFIX,yahoo.net,🚀 节点选择
-DOMAIN-SUFFIX,yimg.com,🚀 节点选择
-DOMAIN-SUFFIX,ying.com,🚀 节点选择
+DOMAIN-SUFFIX,9to5mac.com,🚀 Node-Select
+DOMAIN-SUFFIX,abpchina.org,🚀 Node-Select
+DOMAIN-SUFFIX,adblockplus.org,🚀 Node-Select
+DOMAIN-SUFFIX,akamaihd.net,🚀 Node-Select
+DOMAIN-SUFFIX,amazon.com,🚀 Node-Select
+DOMAIN-SUFFIX,amazonaws.com,🚀 Node-Select,enhanced-mode
+DOMAIN-SUFFIX,amplitude.com,🚀 Node-Select
+DOMAIN-SUFFIX,angularjs.org,🚀 Node-Select
+DOMAIN-SUFFIX,aol.com,🚀 Node-Select
+DOMAIN-SUFFIX,aolcdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,arcgis.com,🚀 Node-Select
+DOMAIN-SUFFIX,archive.org,🚀 Node-Select
+DOMAIN-SUFFIX,aspnetcdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,att.com,🚀 Node-Select
+DOMAIN-SUFFIX,awsstatic.com,🚀 Node-Select
+DOMAIN-SUFFIX,azureedge.net,🚀 Node-Select
+DOMAIN-SUFFIX,azurewebsites.net,🚀 Node-Select
+DOMAIN-SUFFIX,bbc.com,🚀 Node-Select
+DOMAIN-SUFFIX,bbc.co,🚀 Node-Select
+DOMAIN-SUFFIX,bintray.com,🚀 Node-Select,enhanced-mode
+DOMAIN-SUFFIX,bit.com,🚀 Node-Select
+DOMAIN-SUFFIX,bit.ly,🚀 Node-Select
+DOMAIN-SUFFIX,bitbucket.org,🚀 Node-Select
+DOMAIN-SUFFIX,blog.com,🚀 Node-Select
+DOMAIN-SUFFIX,blogcdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,blogger.com,🚀 Node-Select
+DOMAIN-SUFFIX,blogsmithmedia.com,🚀 Node-Select
+DOMAIN-SUFFIX,bloomberg.com,🚀 Node-Select
+DOMAIN-SUFFIX,box.net,🚀 Node-Select
+DOMAIN-SUFFIX,box.com,🚀 Node-Select
+DOMAIN-SUFFIX,cachefly.net,🚀 Node-Select
+DOMAIN-SUFFIX,chromium.org,🚀 Node-Select
+DOMAIN-SUFFIX,cl.ly,🚀 Node-Select
+DOMAIN-SUFFIX,cloudflare.com,🚀 Node-Select
+DOMAIN-SUFFIX,cloudfront.net,🚀 Node-Select
+DOMAIN-SUFFIX,cloudmagic.com,🚀 Node-Select
+DOMAIN-SUFFIX,cnet.com,🚀 Node-Select
+DOMAIN-SUFFIX,cocoapods.org,🚀 Node-Select
+DOMAIN-SUFFIX,cocoapods.org,🚀 Node-Select
+DOMAIN-SUFFIX,culturedcode.com,🚀 Node-Select
+DOMAIN-SUFFIX,d.pr,🚀 Node-Select
+DOMAIN-SUFFIX,dayone.me,🚀 Node-Select
+DOMAIN-SUFFIX,digicert.com,🚀 Node-Select
+DOMAIN-SUFFIX,discord.gg,🚀 Node-Select
+DOMAIN-SUFFIX,discordapp.com,🚀 Node-Select
+DOMAIN-SUFFIX,discordapp.net,🚀 Node-Select
+DOMAIN-SUFFIX,disq.us,🚀 Node-Select
+DOMAIN-SUFFIX,disqus.com,🚀 Node-Select
+DOMAIN-SUFFIX,disquscdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,dnsimple.com,🚀 Node-Select
+DOMAIN-SUFFIX,docker.com,🚀 Node-Select
+DOMAIN-SUFFIX,dribbble.com,🚀 Node-Select
+DOMAIN-SUFFIX,dropbox.com,🚀 Node-Select
+DOMAIN-SUFFIX,dropboxapi.com,🚀 Node-Select
+DOMAIN-SUFFIX,dropboxstatic.com,🚀 Node-Select
+DOMAIN-SUFFIX,dropboxusercontent.com,🚀 Node-Select
+DOMAIN-SUFFIX,droplr.com,🚀 Node-Select
+DOMAIN-SUFFIX,duckduckgo.com,🚀 Node-Select
+DOMAIN-SUFFIX,edgecastcdn.net,🚀 Node-Select
+DOMAIN-SUFFIX,edgesuite.net,🚀 Node-Select
+DOMAIN-SUFFIX,engadget.com,🚀 Node-Select
+DOMAIN-SUFFIX,entrust.net,🚀 Node-Select
+DOMAIN-SUFFIX,evernote.com,🚀 Node-Select
+DOMAIN-SUFFIX,fabric.io,🚀 Node-Select
+DOMAIN-SUFFIX,fastly.net,🚀 Node-Select
+DOMAIN-SUFFIX,fc2.com,🚀 Node-Select
+DOMAIN-SUFFIX,feedburner.com,🚀 Node-Select
+DOMAIN-SUFFIX,feedly.com,🚀 Node-Select
+DOMAIN-SUFFIX,feedsportal.com,🚀 Node-Select
+DOMAIN-SUFFIX,flickr.com,🚀 Node-Select
+DOMAIN-SUFFIX,gitbooks.io,🚀 Node-Select
+DOMAIN-SUFFIX,git.io,🚀 Node-Select
+DOMAIN-SUFFIX,github.com,🚀 Node-Select,enhanced-mode
+DOMAIN-SUFFIX,github.io,🚀 Node-Select
+DOMAIN-SUFFIX,githubapp.com,🚀 Node-Select
+DOMAIN-SUFFIX,githubusercontent.com,🚀 Node-Select,enhanced-mode
+DOMAIN-SUFFIX,globalsign.com,🚀 Node-Select
+DOMAIN-SUFFIX,gmodules.com,🚀 Node-Select
+DOMAIN-SUFFIX,godaddy.com,🚀 Node-Select
+DOMAIN-SUFFIX,golang.org,🚀 Node-Select
+DOMAIN-SUFFIX,goodreaders.com,🚀 Node-Select
+DOMAIN-SUFFIX,goodreads.com,🚀 Node-Select
+DOMAIN-SUFFIX,graphql.org,🚀 Node-Select
+DOMAIN-SUFFIX,gravatar.com,🚀 Node-Select
+DOMAIN-SUFFIX,gumroad.com,🚀 Node-Select
+DOMAIN-SUFFIX,heroku.com,🚀 Node-Select
+DOMAIN-SUFFIX,herokucdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,hotmail.com,🚀 Node-Select
+DOMAIN-SUFFIX,ift.tt,🚀 Node-Select
+DOMAIN-SUFFIX,ifttt.com,🚀 Node-Select
+DOMAIN-SUFFIX,imageshack.us,🚀 Node-Select
+DOMAIN-SUFFIX,img.ly,🚀 Node-Select
+DOMAIN-SUFFIX,imgur.com,🚀 Node-Select
+DOMAIN-SUFFIX,instapaper.com,🚀 Node-Select
+DOMAIN-SUFFIX,ipfs.io,🚀 Node-Select
+DOMAIN-SUFFIX,ipn.li,🚀 Node-Select
+DOMAIN-SUFFIX,is.gd,🚀 Node-Select
+DOMAIN-SUFFIX,j.mp,🚀 Node-Select
+DOMAIN-SUFFIX,jshint.com,🚀 Node-Select
+DOMAIN-SUFFIX,kat.cr,🚀 Node-Select
+DOMAIN-SUFFIX,libsyn.com,🚀 Node-Select
+DOMAIN-SUFFIX,licdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,linkedin.com,🚀 Node-Select
+DOMAIN-SUFFIX,linode.com,🚀 Node-Select
+DOMAIN-SUFFIX,lithium.com,🚀 Node-Select
+DOMAIN-SUFFIX,littlehj.com,🚀 Node-Select
+DOMAIN-SUFFIX,live.com,🚀 Node-Select
+DOMAIN-SUFFIX,live.net,🚀 Node-Select
+DOMAIN-SUFFIX,mathjax.org,🚀 Node-Select
+DOMAIN-SUFFIX,medium.com,🚀 Node-Select
+DOMAIN-SUFFIX,mega.co.nz,🚀 Node-Select
+DOMAIN-SUFFIX,mega.nz,🚀 Node-Select
+DOMAIN-SUFFIX,megaupload.com,🚀 Node-Select
+DOMAIN-SUFFIX,mobile01.com,🚀 Node-Select
+DOMAIN-SUFFIX,modmyi.com,🚀 Node-Select
+DOMAIN-SUFFIX,name.com,🚀 Node-Select
+DOMAIN-SUFFIX,nextmedia.com,🚀 Node-Select
+DOMAIN-SUFFIX,nintendo.com,🚀 Node-Select
+DOMAIN-SUFFIX,nyti.ms,🚀 Node-Select
+DOMAIN-SUFFIX,nytimes.com,🚀 Node-Select
+DOMAIN-SUFFIX,nytimg.com,🚀 Node-Select
+DOMAIN-SUFFIX,nytstyle.com,🚀 Node-Select
+DOMAIN-SUFFIX,nyt.com,🚀 Node-Select
+DOMAIN-SUFFIX,omnigroup.com,🚀 Node-Select
+DOMAIN-SUFFIX,onenote.com,🚀 Node-Select
+DOMAIN-SUFFIX,openvpn.net,🚀 Node-Select
+DOMAIN-SUFFIX,openwrt.org,🚀 Node-Select
+DOMAIN-SUFFIX,ow.ly,🚀 Node-Select
+DOMAIN-SUFFIX,pastebin.com,🚀 Node-Select
+DOMAIN-SUFFIX,pandora.com,🚀 Node-Select
+DOMAIN-SUFFIX,pinterest.com,🚀 Node-Select
+DOMAIN-SUFFIX,pinimg.com,🚀 Node-Select
+DOMAIN-SUFFIX,periscope.tv,🚀 Node-Select
+DOMAIN-SUFFIX,pinboard.in,🚀 Node-Select
+DOMAIN-SUFFIX,pixiv.net,🚀 Node-Select
+DOMAIN-SUFFIX,pixiv.org,🚀 Node-Select
+DOMAIN-SUFFIX,playpcesor.com,🚀 Node-Select
+DOMAIN-SUFFIX,skype.com,🚀 Node-Select
+DOMAIN-SUFFIX,slack.com,🚀 Node-Select
+DOMAIN-SUFFIX,slack-edge.com,🚀 Node-Select
+DOMAIN-SUFFIX,slack-msgs.com,🚀 Node-Select
+DOMAIN-SUFFIX,smartmailcloud.com,🚀 Node-Select
+DOMAIN-SUFFIX,sndcdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,soundcloud.com,🚀 Node-Select
+DOMAIN-SUFFIX,sourceforge.net,🚀 Node-Select,enhanced-mode
+DOMAIN-SUFFIX,sourceforge.io,🚀 Node-Select,enhanced-mode
+DOMAIN-SUFFIX,speakerdeck.com,🚀 Node-Select
+DOMAIN-SUFFIX,spotify.com,🚀 Node-Select
+DOMAIN-SUFFIX,squarespace.com,🚀 Node-Select
+DOMAIN-SUFFIX,sstatic.net,🚀 Node-Select
+DOMAIN-SUFFIX,stackoverflow.com,🚀 Node-Select
+DOMAIN-SUFFIX,staticflickr.com,🚀 Node-Select
+DOMAIN-SUFFIX,steamcommunity.com,🚀 Node-Select
+DOMAIN-SUFFIX,symauth.com,🚀 Node-Select
+DOMAIN-SUFFIX,symcb.com,🚀 Node-Select
+DOMAIN-SUFFIX,symcd.com,🚀 Node-Select
+DOMAIN-SUFFIX,tapbots.com,🚀 Node-Select
+DOMAIN-SUFFIX,tapbots.net,🚀 Node-Select
+DOMAIN-SUFFIX,techcrunch.com,🚀 Node-Select
+DOMAIN-SUFFIX,textnow.me,🚀 Node-Select
+DOMAIN-SUFFIX,theinitium.com,🚀 Node-Select
+DOMAIN-SUFFIX,telegram.org,🚀 Node-Select
+DOMAIN-SUFFIX,telegram.me,🚀 Node-Select
+DOMAIN-SUFFIX,telegra.ph,🚀 Node-Select
+DOMAIN-SUFFIX,tdesktop.com,🚀 Node-Select
+DOMAIN-SUFFIX,t.me,🚀 Node-Select
+DOMAIN-SUFFIX,thepiratebay.org,🚀 Node-Select
+DOMAIN-SUFFIX,tiny.cc,🚀 Node-Select
+DOMAIN-SUFFIX,tinypic.com,🚀 Node-Select
+DOMAIN-SUFFIX,tmblr.co,🚀 Node-Select
+DOMAIN-SUFFIX,trello.com,🚀 Node-Select
+DOMAIN-SUFFIX,trellocdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,tumblr.com,🚀 Node-Select
+DOMAIN-SUFFIX,twitch.tv,🚀 Node-Select
+DOMAIN-SUFFIX,txmblr.com,🚀 Node-Select
+DOMAIN-SUFFIX,typekit.net,🚀 Node-Select
+DOMAIN-SUFFIX,ubnt.com,🚀 Node-Select
+DOMAIN-SUFFIX,urchin.com,🚀 Node-Select
+DOMAIN-SUFFIX,v.gd,🚀 Node-Select
+DOMAIN-SUFFIX,vimeo.com,🚀 Node-Select
+DOMAIN-SUFFIX,vimeocdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,vine.co,🚀 Node-Select
+DOMAIN-SUFFIX,vox-cdn.com,🚀 Node-Select
+DOMAIN-SUFFIX,vsco.co,🚀 Node-Select
+DOMAIN-SUFFIX,w3schools.com,🚀 Node-Select
+DOMAIN-SUFFIX,weather.com,🚀 Node-Select
+DOMAIN-SUFFIX,wikimedia.org,🚀 Node-Select
+DOMAIN-SUFFIX,wikipedia.com,🚀 Node-Select
+DOMAIN-SUFFIX,wikipedia.org,🚀 Node-Select
+DOMAIN-SUFFIX,windows.net,🚀 Node-Select
+DOMAIN-SUFFIX,wordpress.com,🚀 Node-Select
+DOMAIN-SUFFIX,wp.com,🚀 Node-Select
+DOMAIN-SUFFIX,wsj.com,🚀 Node-Select
+DOMAIN-SUFFIX,wsj.net,🚀 Node-Select
+DOMAIN-SUFFIX,yahoo.com,🚀 Node-Select
+DOMAIN-SUFFIX,yahoo.net,🚀 Node-Select
+DOMAIN-SUFFIX,yimg.com,🚀 Node-Select
+DOMAIN-SUFFIX,ying.com,🚀 Node-Select
 
 # Line
-DOMAIN-SUFFIX,scdn.co,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择,force-remote-dns
-DOMAIN-SUFFIX,line.me,🚀 节点选择
-DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
-DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
-DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
+DOMAIN-SUFFIX,scdn.co,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,line.naver.jp,🚀 Node-Select,force-remote-dns
+DOMAIN-SUFFIX,line.me,🚀 Node-Select
+DOMAIN-SUFFIX,line-apps.com,🚀 Node-Select
+DOMAIN-SUFFIX,line-cdn.net,🚀 Node-Select
+DOMAIN-SUFFIX,line-scdn.net,🚀 Node-Select
 
 # Telegram
-IP-CIDR,91.108.56.0/22,🚀 节点选择,no-resolve
-IP-CIDR,91.108.4.0/22,🚀 节点选择,no-resolve
-IP-CIDR,91.108.8.0/22,🚀 节点选择,no-resolve
-IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
-IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
-IP-CIDR,149.154.164.0/22,🚀 节点选择,no-resolve
+IP-CIDR,91.108.56.0/22,🚀 Node-Select,no-resolve
+IP-CIDR,91.108.4.0/22,🚀 Node-Select,no-resolve
+IP-CIDR,91.108.8.0/22,🚀 Node-Select,no-resolve
+IP-CIDR,109.239.140.0/24,🚀 Node-Select,no-resolve
+IP-CIDR,149.154.160.0/20,🚀 Node-Select,no-resolve
+IP-CIDR,149.154.164.0/22,🚀 Node-Select,no-resolve
 
 # LAN
 DOMAIN-SUFFIX,local,DIRECT
@@ -546,4 +562,4 @@ IP-CIDR,100.64.0.0/10,DIRECT
 
 # Final
 GEOIP,CN,DIRECT
-FINAL,🚀 节点选择
+FINAL,🚀 Node-Select
