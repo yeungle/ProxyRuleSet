@@ -41,22 +41,75 @@ JMS5 = vmess, c10s5.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-8
 JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731-80ed-6a333d656b7c, tls=false, skip-cert-verify=false, alterId=0
 
 [Proxy Group]
-🚀 Node-Select = select, 🇺🇸 JMS-Auto, 🇺🇸 JMS-Select, 🇬🇧 MESL-UK-auto, 🇺🇸 MESL-US-auto, DIRECT
-🇺🇸 JMS-Auto 			= url-test, JMS1, JMS2, JMS3, JMS6, interval=60
-🇺🇸 JMS-Select 		= select,  JMS1, JMS2, JMS3, JMS6
-🇺🇸 MESL-US-Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
-🇺🇸 MESL-US-auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
-🇬🇧 MESL-UK-auto		= url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
-🇬🇧 MESL-UK-Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
-🇩🇪 MESL-DE-Select	= select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*DE.*, interval=300, tolerance=50
-🌍 OpenAI-Select		= select, 🚀 Node-Select, 🇺🇸 JMS-Auto, 🇺🇸 MESL-US-Select
-🌍 BBC-Select		= select, 🚀 Node-Select, 🇬🇧 MESL-UK-auto, 🇬🇧 MESL-UK-Select
-🌍 Bloomberg-WSJ-Reuters-Auto = url-test, 🇬🇧 MESL-UK-auto, 🇺🇸 MESL-US-auto
-🌍 Bloomberg-WSJ-Reuters-Select = select, 🇺🇸 MESL-US-auto, 🇬🇧 MESL-UK-auto,  🌍 Bloomberg-WSJ-Reuters-Auto, 🇬🇧 MESL-UK-Select
-🌶️ 抖音		= select, 🚀 Node-Select, 🇺🇸 JMS-Auto, 🇬🇧 MESL-UK-Select, 🇩🇪 MESL-DE-Select
-🅿️ Prime-Video = select,  🚀 Node-Select, JMS4, JMS5, 🇺🇸 JMS-Auto, 🇬🇧 MESL-UK-auto, 🇺🇸 MESL-US-auto, 🇩🇪 MESL-DE-Select
+🚀 节点选择 = select, 🇺🇸 JMS auto, 🇺🇸 JMS, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, DIRECT
+🇺🇸 JMS auto = url-test, 🇺🇸 JMS1, 🇺🇸 JMS2, 🇺🇸 JMS3, 🇺🇸 JMS6, interval=200
+🇺🇸 JMS = select, 🇺🇸 JMS1, 🇺🇸 JMS2, 🇺🇸 JMS3, 🇯🇵 JMS4, 🇳🇱 JMS5, 🇺🇸 JMS6
+🇺🇸 MESL US Select = select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
+🇺🇸 MESL US auto = url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*US.*, interval=300, tolerance=50
+🇬🇧 MESL UK auto = url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
+🇬🇧 MESL UK Select = select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*UK.*, interval=300, tolerance=50
+🇩🇪 MESL DE Select = select, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*DE.*, interval=300, tolerance=50
+🇭🇰 MESL HK auto = url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*HK.*, interval=300, tolerance=50
+🇨🇦 MESL CA auto = url-test, policy-path=https://911tg3rs.com/api/v1/client/subscribe?token=69391652ffb32f7519dd3f7b0091c6fb, policy-regex-filter=.*CA.*, interval=300, tolerance=50
+
+🤖 OpenAI Select = select, 🇺🇸 JMS auto, 🇺🇸 MESL US auto, 🇺🇸 MESL US Select, 🚀 节点选择
+🎬 Youtube Select = select, 🇯🇵 JMS4, 🇳🇱 JMS5, 🚀 节点选择, 🇺🇸 JMS, 🇺🇸 MESL US auto, 🇭🇰 MESL HK auto
+🧠 Google Scholar Select = select, 🌍 0.2 计费流量, 🇺🇸 MESL US auto, 🚀 节点选择
+🅱️ BBC Select = select, 🚀 节点选择, 🇬🇧 MESL UK auto, 🇬🇧 MESL UK Select
+🅿️ Prime Video = select, 🇯🇵 JMS4, 🇳🇱 JMS5, 🇺🇸 JMS auto, 🇺🇸 JMS, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, 🇩🇪 MESL DE Select
+🌶️ 抖音 = select, DIRECT, 🇯🇵 JMS4, 🇳🇱 JMS5, 🚀 节点选择, 🇺🇸 JMS auto, 🇩🇪 MESL DE Select
+🎹 TikTok = select, DIRECT, 🚀 节点选择, 🇯🇵 JMS4, 🇳🇱 JMS5, 🇺🇸 JMS auto, 🇩🇪 MESL DE Select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+📡 Bloomberg WSJ Reuters Auto = url-test, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+📡 Bloomberg WSJ Reuters Select = select, 🇺🇸 MESL US Select, 🇬🇧 MESL UK Select, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto, 📡 Bloomberg WSJ Reuters Auto, 🇺🇸 JMS
+🌍 0.2 计费流量 = url-test, include-all=true, filter=0.2, interval=60
+🌍 国外媒体 = select, 🚀 节点选择, 🎯 全球直连, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+📲 电报信息 = select, 🚀 节点选择, 🎯 全球直连, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+Ⓜ️ 微软服务 = select, 🚀 节点选择, 🎯 全球直连, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+🍎 苹果服务 = select, 🚀 节点选择, 🎯 全球直连, 🇺🇸 JMS auto, 🇬🇧 MESL UK auto, 🇺🇸 MESL US auto
+🎯 全球直连 = select, DIRECT, 🚀 节点选择
+🛑 全球拦截 = select, REJECT, DIRECT
+🍃 应用净化 = select, REJECT, DIRECT
+🐟 漏网之鱼 = select, 🚀 节点选择, 🎯 全球直连, 🇭🇰 MESL HK auto, 🇯🇵 JMS4, 🇳🇱 JMS5, 🇺🇸 JMS auto
+🏠 直连或代理 = select, DIRECT, 🚀 节点选择
+🇩🇪 德国网站 = select, 🇩🇪 MESL DE Select
+🔞 Porn Select = select, 🇯🇵 JMS4, 🇳🇱 JMS5, 🚀 节点选择, 🇺🇸 JMS auto, 🇺🇸 MESL US auto, 🇭🇰 MESL HK auto
+🐤 X Select = select, 🇯🇵 JMS4, 🇳🇱 JMS5, 🚀 节点选择, 🇺🇸 JMS auto, 🇺🇸 MESL US auto, 🇭🇰 MESL HK auto
 
 [Rule]
+### Porn iyf
+DOMAIN-SUFFIX,pornhub.com,🔞 Porn Select
+DOMAIN-SUFFIX,pornhubpremium.com,🔞 Porn Select
+DOMAIN-SUFFIX,phncdn.com,🔞 Porn Select
+DOMAIN-SUFFIX,xvideos-cdn.com,🔞 Porn Select
+DOMAIN-SUFFIX,xvideos.com,🔞 Porn Select
+DOMAIN-SUFFIX,iyf.tv,🔞 Porn Select
+
+### library
+DOMAIN-SUFFIX,torontopubliclibrary.ca,🇨🇦 MESL CA auto
+DOMAIN-SUFFIX,cppinvestments.com,🇨🇦 MESL CA auto
+
+### tiktok
+DOMAIN-KEYWORD,-tiktokcdn-com,🎹 TikTok
+DOMAIN-SUFFIX,musical.ly,🎹 TikTok
+DOMAIN-SUFFIX,tik-tokapi.com,🎹 TikTok
+DOMAIN-SUFFIX,tiktok.com,🎹 TikTok
+DOMAIN-SUFFIX,tiktokcdn.com,🎹 TikTok
+DOMAIN-SUFFIX,tiktokv.com,🎹 TikTok
+DOMAIN-SUFFIX,tiktokcdn-us.com,🎹 TikTok
+# Youtube
+DOMAIN-KEYWORD,youtube,🎬 Youtube Select
+DOMAIN-SUFFIX,googlevideo.com,🎬 Youtube Select
+DOMAIN,youtubei.googleapis.com,🎬 Youtube Select
+DOMAIN,yt3.ggpht.com,🎬 Youtube Select
+DOMAIN-SUFFIX,gvt2.com,🎬 Youtube Select
+DOMAIN-SUFFIX,youtu.be,🎬 Youtube Select
+DOMAIN-SUFFIX,ytimg.com,🎬 Youtube Select
+DOMAIN-SUFFIX,youtube-nocookie.com,🎬 Youtube Select
+DOMAIN-SUFFIX,youtube.com,🎬 Youtube Select
+DOMAIN-SUFFIX,yt.be,🎬 Youtube Select
+DOMAIN-SUFFIX,i.ytimg.com,🎬 Youtube Select
+DOMAIN-SUFFIX,music.youtube.com,🇺🇸 JMS auto
+
 # Prime video
 DOMAIN,pop-ca-cf.dash.pv-cdn.net,🅿️ Prime-Video
 DOMAIN,primevideo.com,🅿️ Prime-Video
@@ -128,33 +181,33 @@ DOMAIN-SUFFIX,volcsiriusbd.com,🌶️ 抖音
 DOMAIN-SUFFIX,bdurl.net,🌶️ 抖音
 
 # BBC
-DOMAIN-KEYWORD,abematv.akamaized.net,🌍 BBC-Select
-DOMAIN,aod-dash-uk-live.akamaized.net,🌍 BBC-Select
-DOMAIN,aod-hls-uk-live.akamaized.net,🌍 BBC-Select
-DOMAIN,vod-dash-uk-live.akamaized.net,🌍 BBC-Select
-DOMAIN,vod-thumb-uk-live.akamaized.net,🌍 BBC-Select
-DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 BBC-Select
-DOMAIN,hboasialive.akamaized.net,🌍 BBC-Select
-DOMAIN,hbogoprod-vod.akamaized.net,🌍 BBC-Select
-DOMAIN-KEYWORD,bbcfmt,🌍 BBC-Select
-DOMAIN-SUFFIX,bbc.net.uk,🌍 BBC-Select
-DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 BBC-Select
-DOMAIN-SUFFIX,bidi.net.uk,🌍 BBC-Select
-DOMAIN-KEYWORD,uk-live,🌍 BBC-Select
-DOMAIN-SUFFIX,bbc.co.uk,🌍 BBC-Select
-DOMAIN-SUFFIX,bbc.co,🌍 BBC-Select
-DOMAIN-SUFFIX,bbc.com,🌍 BBC-Select
-DOMAIN-SUFFIX,bbci.co,🌍 BBC-Select
-DOMAIN-SUFFIX,bbci.co.uk,🌍 BBC-Select
+DOMAIN-KEYWORD,abematv.akamaized.net,🅱️ BBC Select
+DOMAIN,aod-dash-uk-live.akamaized.net,🅱️ BBC Select
+DOMAIN,aod-hls-uk-live.akamaized.net,🅱️ BBC Select
+DOMAIN,vod-dash-uk-live.akamaized.net,🅱️ BBC Select
+DOMAIN,vod-thumb-uk-live.akamaized.net,🅱️ BBC Select
+DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🅱️ BBC Select
+DOMAIN,hboasialive.akamaized.net,🅱️ BBC Select
+DOMAIN,hbogoprod-vod.akamaized.net,🅱️ BBC Select
+DOMAIN-KEYWORD,bbcfmt,🅱️ BBC Select
+DOMAIN-SUFFIX,bbc.net.uk,🅱️ BBC Select
+DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🅱️ BBC Select
+DOMAIN-SUFFIX,bidi.net.uk,🅱️ BBC Select
+DOMAIN-KEYWORD,uk-live,🅱️ BBC Select
+DOMAIN-SUFFIX,bbc.co.uk,🅱️ BBC Select
+DOMAIN-SUFFIX,bbc.co,🅱️ BBC Select
+DOMAIN-SUFFIX,bbc.com,🅱️ BBC Select
+DOMAIN-SUFFIX,bbci.co,🅱️ BBC Select
+DOMAIN-SUFFIX,bbci.co.uk,🅱️ BBC Select
 
 # Bloomberg， WSJ， Reuters,   Perplexity
-DOMAIN-SUFFIX,techcrunch.com,🌍 Bloomberg-WSJ-Reuters-Select
-DOMAIN-SUFFIX,bloomberg.com,🌍 Bloomberg-WSJ-Reuters-Select
-DOMAIN-SUFFIX,wsj.com,🌍 Bloomberg-WSJ-Reuters-Select
-DOMAIN-SUFFIX,reuters.com,🌍 Bloomberg-WSJ-Reuters-Select
-DOMAIN-SUFFIX,reddit.com,🌍 Bloomberg-WSJ-Reuters-Select
-DOMAIN-SUFFIX,scholar.google.com,🌍 Bloomberg-WSJ-Reuters-Select
-DOMAIN-SUFFIX,perplexity.ai,🌍 Bloomberg-WSJ-Reuters-Select
+DOMAIN-SUFFIX,techcrunch.com,📡 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,bloomberg.com,📡 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,wsj.com,📡 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,reuters.com,📡 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,reddit.com,📡 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,scholar.google.com,📡 Bloomberg WSJ Reuters Select
+DOMAIN-SUFFIX,perplexity.ai,📡 Bloomberg WSJ Reuters Select
 
 # OpenAI
 DOMAIN-SUFFIX,openai.com,🌍 OpenAI-Select

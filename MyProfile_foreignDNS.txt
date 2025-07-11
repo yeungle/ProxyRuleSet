@@ -52,8 +52,8 @@ JMS6 = vmess, c10s801.portablesubmarines.com, 18786, username=f822d020-fa2d-4731
 🌍 OpenAI-Select		= select, 🚀 Node-Select, 🇺🇸 JMS-Auto, 🇺🇸 MESL-US-Select
 🌍 BBC-Select		= select, 🚀 Node-Select, 🇬🇧 MESL-UK-auto, 🇬🇧 MESL-UK-Select
 🌍 Bloomberg-WSJ-Reuters-Auto = url-test, 🇬🇧 MESL-UK-auto, 🇺🇸 MESL-US-auto
-🌍 Bloomberg-WSJ-Reuters-Select = select, 🇺🇸 MESL-US-auto, 🇬🇧 MESL-UK-auto,  🌍 Bloomberg-WSJ-Reuters-Auto, 🇬🇧 MESL-UK-Select
-🌶️ 抖音		= select, 🚀 Node-Select, 🇺🇸 JMS-Auto, 🇬🇧 MESL-UK-Select, 🇩🇪 MESL-DE-Select
+🌍 Bloomberg-WSJ-Reuters-Select = select, 🇺🇸 MESL-US-auto, 🇬🇧 MESL-UK-auto,  🌍 Bloomberg-WSJ-Reuters-Auto, 🇬🇧 MESL-UK-Select, 🇺🇸 JMS-Select, 🇺🇸 MESL-US-Select
+🌶️ 抖音		= select, 🚀 Node-Select, 🇺🇸 JMS-Auto, 🇬🇧 MESL-UK-Select, 🇩🇪 MESL-DE-Select, DIRECT, 🇺🇸 JMS-Select
 🅿️ Prime-Video = select,  🚀 Node-Select, JMS4, JMS5, 🇺🇸 JMS-Auto, 🇬🇧 MESL-UK-auto, 🇺🇸 MESL-US-auto, 🇩🇪 MESL-DE-Select
 
 [Rule]
