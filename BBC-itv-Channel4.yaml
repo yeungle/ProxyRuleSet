@@ -26,3 +26,7 @@ payload:
 
   # ===== 非 BBC 网站但疑似同组策略调用（如 Channel4）=====
   - DOMAIN-SUFFIX,channel4.com         # 英国 C4 电视频道，非 BBC，但常并入 BBC 策略组
+  # ==== ITV ====
+  - DOMAIN,itvpnpmobile-a.akamaihd.net
+  - DOMAIN-SUFFIX,itv.com
+  - DOMAIN-SUFFIX,itvstatic.com
