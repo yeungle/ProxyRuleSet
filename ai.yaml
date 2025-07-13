@@ -1,0 +1,27 @@
+payload:
+  # 🤖 OpenAI 主站与产品入口
+  - DOMAIN-SUFFIX,openai.com         # ChatGPT、API 控制台等主站
+  - DOMAIN-SUFFIX,chatgpt.com        # ChatGPT 独立域名
+  - DOMAIN-SUFFIX,openai.org         # OpenAI 组织域名（少见）
+  - DOMAIN-SUFFIX,oaistatic.com      # OpenAI 静态资源
+
+  # 🤖 OpenAI 辅助服务
+  - DOMAIN-SUFFIX,inquiry.withpersona.com   # Persona 身份验证，用于 ChatGPT 登录验证
+  - DOMAIN-SUFFIX,prodregistryv2.org        # 模型与插件注册组件（如插件市场）
+  - DOMAIN-SUFFIX,featureassets.org         # ChatGPT 插件功能配置数据
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net  # OpenAI 内容缓存 CDN
+
+  # 🤖 OpenAI 依赖的第三方服务
+  - DOMAIN-SUFFIX,browser-intake-datadoghq.com  # 数据监控服务 Datadog
+  - DOMAIN-SUFFIX,statsigapi.net                # A/B 实验和功能开关服务 Statsig
+  - DOMAIN-SUFFIX,api.stripe.com                # Stripe 支付服务
+  - DOMAIN-SUFFIX,api.onedrive.com              # 可能用于文件读取
+  - DOMAIN-SUFFIX,api.atlassian.com             # Atlassian 集成（如插件或团队协作）
+  - DOMAIN-SUFFIX,livekit.io                    # 实时音视频服务支持
+
+  # 🤖 其他 AI 相关服务
+  - DOMAIN-SUFFIX,gemini.google.com     # Google Gemini AI（前 Bard）
+  - DOMAIN-SUFFIX,grok.com              # xAI 的 Grok（Elon Musk）
+
+  # 🤖 地图与空间数据服务
+  - DOMAIN-SUFFIX,mapbox.com            # ChatGPT 插件等使用的地图服务
