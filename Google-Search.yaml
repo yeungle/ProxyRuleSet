@@ -1,0 +1,13 @@
+payload:
+  - DOMAIN-SUFFIX,google.com           # 搜索主域，包含搜索、账户、服务等
+  - DOMAIN-SUFFIX,googlebot.com        # Google 搜索爬虫的身份标识域名
+  - DOMAIN-SUFFIX,recaptcha.net        # 与搜索安全验证有关（防止滥用）
+  - DOMAIN-SUFFIX,schema.org           # 用于结构化数据识别（SEO 优化）
+  - DOMAIN-SUFFIX,data-vocabulary.org  # 已弃用的结构化数据格式（旧搜索标准）
+  - DOMAIN-SUFFIX,cookiechoices.org    # 欧盟 Cookie 同意页面，与搜索隐私合规有关
+  - DOMAIN-SUFFIX,gstatic.com          # 搜索加载的静态资源（JS、CSS 等）
+  - DOMAIN-SUFFIX,g.co                 # Google 短链接，经常出现在搜索结果中
+  - DOMAIN-SUFFIX,ampproject.org       # 加速移动页面项目，Google 搜索结果优先展示
+  - DOMAIN-SUFFIX,amp.dev              # AMP 开发文档
+  - DOMAIN-SUFFIX,ampproject.com       # AMP 主站
+  - DOMAIN-SUFFIX,ampproject.net       # AMP 静态资源（含 JS 框架）
