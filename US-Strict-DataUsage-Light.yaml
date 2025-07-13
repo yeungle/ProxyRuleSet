@@ -9,6 +9,7 @@ payload:
   - DOMAIN-SUFFIX,bloomberg.com
   - DOMAIN-SUFFIX,wsj.com
   - DOMAIN-SUFFIX,reuters.com
+  - DOMAIN-SUFFIX,nytimes.com
 
   # ===== 科技新闻与资源 =====
   - DOMAIN-SUFFIX,techcrunch.com
