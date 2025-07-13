@@ -1,5 +1,4 @@
 payload:
-  # 核心域名
   - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,youtu.be
   - DOMAIN-SUFFIX,googlevideo.com
