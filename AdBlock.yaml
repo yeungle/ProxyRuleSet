@@ -1,0 +1,597 @@
+payload:
+  # 📦 广告 SDK 与广告平台
+  - DOMAIN-KEYWORD,admarvel
+  - DOMAIN-KEYWORD,admaster
+  - DOMAIN-KEYWORD,adsage
+  - DOMAIN-KEYWORD,adsensor
+  - DOMAIN-KEYWORD,adservice
+  - DOMAIN-KEYWORD,adsmogo
+  - DOMAIN-KEYWORD,adsrvmedia
+  - DOMAIN-KEYWORD,adsserving
+  - DOMAIN-KEYWORD,adsystem
+  - DOMAIN-KEYWORD,adwords
+  - DOMAIN-SUFFIX,admob.com
+  - DOMAIN-SUFFIX,ads.gmodules.com
+  - DOMAIN-SUFFIX,ads.google.com
+  - DOMAIN-SUFFIX,adservice.google.com
+  - DOMAIN-SUFFIX,afd.l.google.com
+  - DOMAIN-SUFFIX,badad.googleplex.com
+  - DOMAIN-SUFFIX,doubleclick.com
+  - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,googleadsserving.cn
+  - DOMAIN-SUFFIX,googlecommerce.com
+  - DOMAIN-SUFFIX,googlesyndication.com
+  - DOMAIN-SUFFIX,mobileads.google.com
+  - DOMAIN-SUFFIX,pagead-tpc.l.google.com
+  - DOMAIN-SUFFIX,pagead.google.com
+  - DOMAIN-SUFFIX,pagead.l.google.com
+  - DOMAIN-SUFFIX,ad-brix.com
+  - DOMAIN-SUFFIX,ad-delivery.net
+  - DOMAIN-SUFFIX,ad-locus.com
+  - DOMAIN-SUFFIX,ad-plus.cn
+  - DOMAIN-SUFFIX,ad7.com
+  - DOMAIN-SUFFIX,adadapted.com
+  - DOMAIN-SUFFIX,adbana.com
+  - DOMAIN-SUFFIX,adchina.com
+  - DOMAIN-SUFFIX,adcome.cn
+  - DOMAIN-SUFFIX,ader.mobi
+  - DOMAIN-SUFFIX,adform.net
+  - DOMAIN-SUFFIX,adfuture.cn
+  - DOMAIN-SUFFIX,adhouyi.com
+  - DOMAIN-SUFFIX,adinfuse.com
+  - DOMAIN-SUFFIX,adirects.com
+  - DOMAIN-SUFFIX,adkmob.com
+  - DOMAIN-SUFFIX,adlive.cn
+  - DOMAIN-SUFFIX,adlocus.com
+  - DOMAIN-SUFFIX,admaji.com
+  - DOMAIN-SUFFIX,admon.cn
+  - DOMAIN-SUFFIX,adnyg.com
+  - DOMAIN-SUFFIX,adpolestar.net
+  - DOMAIN-SUFFIX,adpro.cn
+  - DOMAIN-SUFFIX,adpush.cn
+  - DOMAIN-SUFFIX,adquan.com
+  - DOMAIN-SUFFIX,adreal.cn
+  - DOMAIN-SUFFIX,ads8.com
+  - DOMAIN-SUFFIX,adsame.com
+  - DOMAIN-SUFFIX,adsmogo.com
+  - DOMAIN-SUFFIX,adsmogo.org
+  - DOMAIN-SUFFIX,adsunflower.com
+  - DOMAIN-SUFFIX,adsunion.com
+  - DOMAIN-SUFFIX,adtrk.me
+  - DOMAIN-SUFFIX,adups.com
+  - DOMAIN-SUFFIX,aduu.cn
+  - DOMAIN-SUFFIX,advertising.com
+  - DOMAIN-SUFFIX,adview.cn
+  - DOMAIN-SUFFIX,advmob.cn
+  - DOMAIN-SUFFIX,adwetec.com
+  - DOMAIN-SUFFIX,adwhirl.com
+  - DOMAIN-SUFFIX,adwo.com
+  - DOMAIN-SUFFIX,adxmi.com
+  - DOMAIN-SUFFIX,adyun.com
+  - DOMAIN-SUFFIX,adzerk.net
+  - DOMAIN-SUFFIX,agrant.cn
+  - DOMAIN-SUFFIX,agrantsem.com
+  - DOMAIN-SUFFIX,allyes.cn
+  - DOMAIN-SUFFIX,allyes.com
+  - DOMAIN-SUFFIX,amazon-adsystem.com
+  - DOMAIN-SUFFIX,appads.com
+  - DOMAIN-SUFFIX,biddingos.com
+  - DOMAIN-SUFFIX,biddingx.com
+  - DOMAIN-SUFFIX,banmamedia.com
+  - DOMAIN-SUFFIX,behe.com
+  - DOMAIN-SUFFIX,baycode.cn
+  - DOMAIN-SUFFIX,bayimob.com
+  - DOMAIN-SUFFIX,bfshan.cn
+  - DOMAIN-SUFFIX,duomeng.cn            # 多盟，国内知名移动广告平台
+  - DOMAIN-SUFFIX,dxpmedia.com          # DXP 数字广告解决方案
+  - DOMAIN-SUFFIX,emarbox.com           # 亿玛在线，广告技术服务商
+  - DOMAIN-SUFFIX,epsilon.com           # 全球广告营销服务公司
+  - DOMAIN-SUFFIX,exosrv.com            # 国外弹窗广告平台
+  - DOMAIN-SUFFIX,feixin2.com           # 广告分发，原飞信网络渠道
+  - DOMAIN-SUFFIX,flashtalking.com      # 动态广告技术与展示平台
+  - DOMAIN-SUFFIX,gentags.net           # 程序化广告
+  - DOMAIN-SUFFIX,glispa.com            # 全球移动广告平台
+  - DOMAIN-SUFFIX,immob.cn              # 智能手机广告平台
+  - DOMAIN-SUFFIX,inad.com              # 国内广告平台
+  - DOMAIN-SUFFIX,inmobi.cn             # 印度移动广告平台 InMobi
+  - DOMAIN-SUFFIX,inmobi.net
+  - DOMAIN-SUFFIX,inmobicdn.cn
+  - DOMAIN-SUFFIX,inmobicdn.net
+  - DOMAIN-SUFFIX,innity.com            # 东南亚广告技术平台
+  - DOMAIN-SUFFIX,ipinyou.com           # 品友互动，程序化广告
+  - DOMAIN-SUFFIX,jesgoo.com            # 易传媒，早期广告联盟
+  - DOMAIN-SUFFIX,jiaeasy.net           # 移动广告平台
+  - DOMAIN-SUFFIX,jiguang.cn             # 极光推送，数据采集与广告
+  - DOMAIN-SUFFIX,jimdo.com              # Jimdo 建站平台，可能内嵌广告
+  - DOMAIN-SUFFIX,jisucn.com             # 极速联盟广告
+  - DOMAIN-SUFFIX,jmgehn.cn              # 广告跳转域名
+  - DOMAIN-SUFFIX,jpush.cn               # 极光推送
+  - DOMAIN-SUFFIX,jusha.com              # 聚沙广告平台
+  - DOMAIN-SUFFIX,juzi.cn                # 橘子广告平台
+  - DOMAIN-SUFFIX,juzilm.com             # 橘子联盟
+  - DOMAIN-SUFFIX,kejet.com              # 科捷广告
+  - DOMAIN-SUFFIX,kejet.net              # 科捷广告
+  - DOMAIN-SUFFIX,keydot.net             # 广告跟踪域
+  - DOMAIN-SUFFIX,keyrun.cn              # 科润广告
+  - DOMAIN-SUFFIX,kmd365.com             # 广告平台
+  - DOMAIN-SUFFIX,krux.net               # Salesforce 广告平台
+  - DOMAIN-SUFFIX,lnk0.com               # 链接跳转跟踪
+  - DOMAIN-SUFFIX,lnk8.cn                # 链接跳转跟踪
+  - DOMAIN-SUFFIX,localytics.com         # Localytics，行为分析与营销
+  - DOMAIN-SUFFIX,lomark.cn              # 蓝标传播旗下
+  - DOMAIN-SUFFIX,lotuseed.com           # 种子广告平台
+  - DOMAIN-SUFFIX,lrswl.com              # 广告域名
+  - DOMAIN-SUFFIX,lufax.com              # 陆金所，曾涉及广告投放
+  - DOMAIN-SUFFIX,madhouse.cn            # 万普世纪，移动广告平台
+  - DOMAIN-SUFFIX,madmini.com            # 广告邮件平台
+  - DOMAIN-SUFFIX,madserving.com         # 广告服务平台
+  - DOMAIN-SUFFIX,magicwindow.cn         # 魔窗广告平台
+  - DOMAIN-SUFFIX,mathtag.com            # Mathtag，广告标签跟踪
+  - DOMAIN-SUFFIX,maysunmedia.com        # 麦晟传媒
+  - DOMAIN-SUFFIX,mbai.cn                # 移动广告平台
+  - DOMAIN-SUFFIX,mediaplex.com          # Mediaplex 广告平台
+  - DOMAIN-SUFFIX,mediav.com             # 秒针系统，广告监测
+  - DOMAIN-SUFFIX,megajoy.com            # 动网先锋游戏广告
+  - DOMAIN-SUFFIX,meiqia.com             # 美洽客服，可能嵌入追踪代码
+  - DOMAIN-SUFFIX,mgogo.com              # 广告平台
+  - DOMAIN-SUFFIX,miaozhen.com           # 秒针系统
+  - DOMAIN-SUFFIX,microad-cn.com         # MicroAd 日本广告
+  - DOMAIN-SUFFIX,miidi.net              # 迷迪广告
+  - DOMAIN-SUFFIX,mijifen.com            # 米积分广告
+  - DOMAIN-SUFFIX,mixpanel.com           # Mixpanel，用户分析平台
+  - DOMAIN-SUFFIX,mjmobi.com             # 广告平台
+  - DOMAIN-SUFFIX,mng-ads.com            # 广告平台
+  - DOMAIN-SUFFIX,moad.cn                # Moad 广告平台
+  - DOMAIN-SUFFIX,moatads.com            # Moat 广告验证
+  - DOMAIN-SUFFIX,mobaders.com           # 广告平台
+  - DOMAIN-SUFFIX,mobclix.com            # Mobclix 移动广告平台
+  - DOMAIN-SUFFIX,mobgi.com              # Mobgi 广告平台
+  - DOMAIN-SUFFIX,mobisage.cn            # 芒果移动广告
+  - DOMAIN-SUFFIX,mobvista.com           # Mobvista 移动广告平台
+  - DOMAIN-SUFFIX,mopub.com              # MoPub 广告平台（Twitter 收购）
+  - DOMAIN-SUFFIX,moquanad.com           # 陌圈广告
+  - DOMAIN-SUFFIX,mpush.cn               # MPush 推送与广告平台
+  # 📦 广告平台与广告分析服务（续）
+  - DOMAIN-SUFFIX,mxpnl.com               # Mixpanel 缩写域名，用于数据分析
+  - DOMAIN-SUFFIX,myhug.cn                # 广告联盟 Hug
+  - DOMAIN-SUFFIX,mzy2014.com             # 广告跳转平台
+  - DOMAIN-SUFFIX,networkbench.com        # NBS 网络性能监控，可能用于埋点
+  - DOMAIN-SUFFIX,ninebox.cn              # 九格广告平台
+  - DOMAIN-SUFFIX,ntalker.com             # 云客服系统，内嵌数据跟踪脚本
+  - DOMAIN-SUFFIX,nylalobghyhirgh.com     # 可疑广告或恶意跳转域名
+  - DOMAIN-SUFFIX,o2omobi.com             # O2O 移动广告平台
+  - DOMAIN-SUFFIX,oadz.com                # 广告联盟域名
+  - DOMAIN-SUFFIX,oneapm.com              # APM 性能监控，可嵌入网页
+  - DOMAIN-SUFFIX,onetad.com              # 原生广告平台 OneTad
+  - DOMAIN-SUFFIX,optaim.com              # 欧普泰广告平台
+  - DOMAIN-SUFFIX,optimix.asia            # 广告数据优化平台
+  - DOMAIN-SUFFIX,optimix.cn              # 广告数据优化平台
+  - DOMAIN-SUFFIX,optimizelyapis.com      # Optimizely A/B 测试平台
+  - DOMAIN-SUFFIX,overture.com            # 雅虎旗下广告平台（已停用但部分服务还存活）
+  - DOMAIN-SUFFIX,p0y.cn                  # 广告短链接跳转域
+  - DOMAIN-SUFFIX,pagechoice.net          # 页面跳转与广告平台
+  - DOMAIN-SUFFIX,pingdom.net             # Pingdom 网站性能监控
+  - DOMAIN-SUFFIX,plugrush.com            # Plugrush 成人广告联盟
+  - DOMAIN-SUFFIX,popin.cc                # Popin 推荐引擎与广告
+  - DOMAIN-SUFFIX,pro.cn                  # pro.cn 安全类广告跳转
+  - DOMAIN-SUFFIX,publicidad.net          # 西语广告域名（Publicidad = 广告）
+  - DOMAIN-SUFFIX,publicidad.tv           # 同上
+  - DOMAIN-SUFFIX,pubmatic.com            # PubMatic 广告交易平台
+  - DOMAIN-SUFFIX,pubnub.com              # PubNub 通信服务，部分应用用于广告与推送
+  - DOMAIN-SUFFIX,qcl777.com              # 可疑推广域名
+  - DOMAIN-SUFFIX,qiyou.com               # 起有广告平台
+  - DOMAIN-SUFFIX,qtmojo.com              # QtMojo 广告平台
+  - DOMAIN-SUFFIX,quantcount.com          # Quantcast 用户跟踪服务
+  - DOMAIN-SUFFIX,qucaigg.com             # 曲奇广告平台
+  - DOMAIN-SUFFIX,qumi.com                # 趣米广告平台
+  - DOMAIN-SUFFIX,qxxys.com               # 可疑域名，广告跳转
+  - DOMAIN-SUFFIX,reachmax.cn             # ReachMax 精准广告服务
+  - DOMAIN-SUFFIX,responsys.net           # Oracle Responsys 营销服务
+  - DOMAIN-SUFFIX,revsci.net              # AudienceScience 广告服务（原名 Revenue Science）
+  - DOMAIN-SUFFIX,rlcdn.com               # Lotame 数据平台跟踪域
+  - DOMAIN-SUFFIX,rtbasia.com             # 亚洲实时广告竞价平台
+  - DOMAIN-SUFFIX,sanya1.com              # 可疑跳转广告域
+  - DOMAIN-SUFFIX,scupio.com              # 社群媒体广告平台 Scupio
+  - DOMAIN-SUFFIX,serving-sys.com         # Sizmek（Amazon 广告）投放域
+  - DOMAIN-SUFFIX,shuiguo.com             # 水果广告联盟
+  - DOMAIN-SUFFIX,shuzilm.cn              # 数字联盟广告服务
+  - DOMAIN-SUFFIX,similarweb.com          # SimilarWeb 数据分析与跟踪
+  - DOMAIN-SUFFIX,sitemeter.com           # 站点流量统计服务
+  - DOMAIN-SUFFIX,sitescout.com           # SiteScout 广告投放平台
+  - DOMAIN-SUFFIX,sitetag.us              # 广告标记与跳转域
+  - DOMAIN-SUFFIX,smartmad.com            # 智汇广告平台
+  - DOMAIN-SUFFIX,social-touch.com        # Social Touch 社交广告服务
+  - DOMAIN-SUFFIX,somecoding.com          # 广告脚本投放平台
+  - DOMAIN-SUFFIX,sponsorpay.com       # 积分墙广告平台，现为 Fyber
+  - DOMAIN-SUFFIX,stargame.com         # 广告或游戏分发平台
+  - DOMAIN-SUFFIX,stg8.com             # 广告监测服务
+  - DOMAIN-SUFFIX,switchadhub.com      # 程序化广告平台 SwitchAdHub
+  - DOMAIN-SUFFIX,sycbbs.com           # 广告或站长相关平台
+  - DOMAIN-SUFFIX,synacast.com         # PPLive 广告分发服务
+  - DOMAIN-SUFFIX,sysdig.com           # 数据监控平台，可能涉及用户行为分析
+  - DOMAIN-SUFFIX,talkingdata.com      # 移动数据广告分析
+  - DOMAIN-SUFFIX,talkingdata.net      # 同上
+  - DOMAIN-SUFFIX,tansuotv.com         # 视频广告平台
+  - DOMAIN-SUFFIX,tanv.com             # 弹幕广告平台
+  - DOMAIN-SUFFIX,tanx.com             # 阿里妈妈广告平台
+  - DOMAIN-SUFFIX,tapjoy.cn            # Tapjoy 广告服务中国节点
+  - DOMAIN-SUFFIX,th7.cn               # 第七传媒广告
+  - DOMAIN-SUFFIX,thoughtleadr.com     # 内容原生广告平台
+  - DOMAIN-SUFFIX,tianmidian.com       # 广告投放平台
+  - DOMAIN-SUFFIX,tiqcdn.com           # Tealium 数据收集/广告跟踪 CDN
+  - DOMAIN-SUFFIX,touclick.com         # 图形验证服务，含广告行为分析
+  - DOMAIN-SUFFIX,trafficjam.cn        # 交通分析或广告平台
+  - DOMAIN-SUFFIX,trafficmp.com        # 流量监控/广告转化跟踪
+  - DOMAIN-SUFFIX,tuia.cn              # 推啊广告联盟
+  - DOMAIN-SUFFIX,ueadlian.com         # UE广告联盟
+  - DOMAIN-SUFFIX,uerzyr.cn            # 可疑广告平台
+  - DOMAIN-SUFFIX,ugdtimg.com          # 广告图像资源 CDN
+  - DOMAIN-SUFFIX,ugvip.com            # 广告平台相关
+  - DOMAIN-SUFFIX,ujian.cc             # 友荐广告平台
+  - DOMAIN-SUFFIX,ukeiae.com           # 广告点击追踪域名
+  - DOMAIN-SUFFIX,umeng.co             # 友盟数据分析（广告相关）
+  - DOMAIN-SUFFIX,umeng.com            # 阿里友盟广告与统计
+  - DOMAIN-SUFFIX,umtrack.com          # 友盟跟踪服务
+  - DOMAIN-SUFFIX,unimhk.com           # 香港广告联盟
+  - DOMAIN-SUFFIX,union-wifi.com       # 联网认证页面广告
+  - DOMAIN-SUFFIX,union001.com         # 广告服务平台
+  - DOMAIN-SUFFIX,unionsy.com          # 广告联盟
+  - DOMAIN-SUFFIX,unlitui.com          # 广告相关服务
+  - DOMAIN-SUFFIX,uri6.com             # 短链接跳转，含广告追踪
+  - DOMAIN-SUFFIX,ushaqi.com           # 互动广告
+  - DOMAIN-SUFFIX,usingde.com          # 使用得广告平台
+  - DOMAIN-SUFFIX,uuzu.com             # 游族网络广告服务
+  - DOMAIN-SUFFIX,uyunad.com           # 优云广告平台
+  - DOMAIN-SUFFIX,vamaker.com          # 广告创意平台
+  - DOMAIN-SUFFIX,voiceads.cn          # 声音广告服务（中国）
+  - DOMAIN-SUFFIX,voiceads.com         # 同上国际站
+  - DOMAIN-SUFFIX,vpon.com             # Vpon 威朋广告，亚洲程序化广告平台
+  - DOMAIN-SUFFIX,vungle.cn            # Vungle 视频广告（中国）
+  - DOMAIN-SUFFIX,vungle.com           # Vungle 视频广告平台
+  - DOMAIN-SUFFIX,waps.cn              # 广告 SDK
+  - DOMAIN-SUFFIX,wapx.cn              # wapx 广告平台
+  - DOMAIN-SUFFIX,webterren.com        # 网汇广告平台
+  - DOMAIN-SUFFIX,whpxy.com            # 互动广告服务
+  - DOMAIN-SUFFIX,winads.cn             # WinAds 广告平台
+  - DOMAIN-SUFFIX,winasdaq.com          # Win广告服务商
+  - DOMAIN-SUFFIX,wiyun.com             # 微云广告平台
+  - DOMAIN-SUFFIX,wooboo.com.cn         # 广告投放技术公司
+  - DOMAIN-SUFFIX,wqmobile.com          # 广启移动广告平台
+  - DOMAIN-SUFFIX,wrating.com           # 万瑞数据，广告和统计分析服务
+  - DOMAIN-SUFFIX,wumii.cn              # 武觅推荐引擎，带广告
+  - DOMAIN-SUFFIX,xcy8.com              # 小程序广告平台
+  - DOMAIN-SUFFIX,xdrig.com             # 广告服务商
+  - DOMAIN-SUFFIX,xiaozhen.com          # 小镇互动广告
+  - DOMAIN-SUFFIX,xibao100.com          # 喜报广告投放平台
+  - DOMAIN-SUFFIX,xtgreat.com           # 智能广告投放
+  - DOMAIN-SUFFIX,xy.com                # XY 游戏广告平台
+  - DOMAIN-SUFFIX,yandui.com            # 研对广告平台
+  - DOMAIN-SUFFIX,yigao.com             # 易告广告联盟
+  - DOMAIN-SUFFIX,yijifen.com           # 易积分广告平台
+  - DOMAIN-SUFFIX,yinooo.com            # 亿诺广告平台
+  - DOMAIN-SUFFIX,yiqifa.com            # 亿起发广告联盟
+  - DOMAIN-SUFFIX,yiwk.com              # 广告变现服务商
+  - DOMAIN-SUFFIX,ylunion.com           # 亿流广告平台
+  - DOMAIN-SUFFIX,ymapp.com             # 亿迈广告
+  - DOMAIN-SUFFIX,ymcdn.cn              # 亿迈广告 CDN
+  - DOMAIN-SUFFIX,yongyuelm.com         # 永跃联盟
+  - DOMAIN-SUFFIX,yooli.com             # 友利广告平台
+  - DOMAIN-SUFFIX,youmi.net             # 有米广告联盟
+  - DOMAIN-SUFFIX,youxiaoad.com         # 游侠广告 SDK
+  - DOMAIN-SUFFIX,yoyi.com.cn           # 悠易互通程序化广告平台
+  - DOMAIN-SUFFIX,yoyi.tv               # 同上，视频广告
+  - DOMAIN-SUFFIX,yrxmr.com             # 亿润广告平台
+  - DOMAIN-SUFFIX,ysjwj.com             # 易视界广告平台
+  - DOMAIN-SUFFIX,yunjiasu.com          # 百度云加速（含广告域名）
+  - DOMAIN-SUFFIX,yunpifu.cn            # 云皮肤广告平台
+  - DOMAIN-SUFFIX,zampdsp.com           # Zamplus DSP 广告平台
+  - DOMAIN-SUFFIX,zamplus.com           # Zamplus 广告系统
+  - DOMAIN-SUFFIX,zcdsp.com             # 众成 DSP 平台
+  - DOMAIN-SUFFIX,zhidian3g.cn          # 指点传媒，广告分发
+  - DOMAIN-SUFFIX,zhiziyun.com          # 智子云广告平台
+  - DOMAIN-SUFFIX,zhjfad.com            # 中汇广告平台
+  - DOMAIN-SUFFIX,zqzxz.com             # 广告点击追踪
+  - DOMAIN-SUFFIX,zzsx8.com             # 广告跳转平台
+
+  # 📈 用户追踪与行为分析平台
+  - DOMAIN-KEYWORD,analysis
+  - DOMAIN-KEYWORD,appsflyer
+  - DOMAIN-KEYWORD,applovin
+  - DOMAIN-KEYWORD,dwtrack
+  - DOMAIN-KEYWORD,omgmta
+  - DOMAIN-KEYWORD,omniture
+  - DOMAIN-KEYWORD,partnerad
+  - DOMAIN-KEYWORD,pingfore
+  - DOMAIN-KEYWORD,usage
+  - DOMAIN-KEYWORD,wlmonitor
+  - DOMAIN-SUFFIX,csi.gstatic.com
+  - DOMAIN-SUFFIX,google-analytics.com
+  - DOMAIN-SUFFIX,service.urchin.com
+  - DOMAIN-SUFFIX,adadvisor.net
+  - DOMAIN-SUFFIX,adap.tv
+  - DOMAIN-SUFFIX,adjust.io
+  - DOMAIN-SUFFIX,acxiom-online.com
+  - DOMAIN-SUFFIX,analysys.cn
+  - DOMAIN-SUFFIX,appsflyer.com
+  - DOMAIN-SUFFIX,branch.io
+  - DOMAIN-SUFFIX,baifendian.com
+  - DOMAIN-SUFFIX,atdmt.com
+  - DOMAIN-SUFFIX,appboy.com
+  - DOMAIN-SUFFIX,applifier.com
+  - DOMAIN-SUFFIX,appadhoc.com  
+  - DOMAIN-SUFFIX,btyou.com
+  - DOMAIN-SUFFIX,buysellads.com
+  - DOMAIN-SUFFIX,c0563.com
+  - DOMAIN-SUFFIX,cacafly.com
+  - DOMAIN-SUFFIX,casee.cn
+  - DOMAIN-SUFFIX,chance-ad.com
+  - DOMAIN-SUFFIX,chanet.com.cn
+  - DOMAIN-SUFFIX,chengadx.com
+  - DOMAIN-SUFFIX,chmae.com
+  - DOMAIN-SUFFIX,clickadu.com
+  - DOMAIN-SUFFIX,clickzs.com
+  - DOMAIN-SUFFIX,cloudmobi.net
+  - DOMAIN-SUFFIX,cnxad.com
+  - DOMAIN-SUFFIX,cocounion.com
+  - DOMAIN-SUFFIX,cooguo.com
+  - DOMAIN-SUFFIX,coolguang.com
+  - DOMAIN-SUFFIX,cpmchina.co
+  - DOMAIN-SUFFIX,cpx24.com
+  - DOMAIN-SUFFIX,daoyoudao.com
+  - DOMAIN-SUFFIX,datouniao.com
+  - DOMAIN-SUFFIX,dianjoy.com
+  - DOMAIN-SUFFIX,dianru.com
+  - DOMAIN-SUFFIX,disqusads.com
+  - DOMAIN-SUFFIX,domob.cn
+  - DOMAIN-SUFFIX,domob.com.cn
+  - DOMAIN-SUFFIX,domob.org
+  - DOMAIN-SUFFIX,dotmore.com.tw
+  - DOMAIN-SUFFIX,doubleverify.com
+  - DOMAIN-SUFFIX,doudouguo.com
+  - DOMAIN-SUFFIX,doumob.com
+  - DOMAIN-SUFFIX,duanat.com
+  - DOMAIN-SUFFIX,duiba.com.cn
+  # 📊 数据追踪与行为分析平台
+  - DOMAIN-SUFFIX,edigitalsurvey.com    # 用户调研与数据采集
+  - DOMAIN-SUFFIX,fraudmetrix.cn        # 同盾科技，反欺诈风控追踪
+  - DOMAIN-SUFFIX,g1.tagtic.cn          # tagtic.cn 相关数据埋点服务
+  - DOMAIN-SUFFIX,gridsum.com           # 国双科技，行为分析与商业智能
+  - DOMAIN-SUFFIX,gridsumdissector.cn
+  - DOMAIN-SUFFIX,gridsumdissector.com
+  - DOMAIN-SUFFIX,growingio.com         # 用户行为分析工具
+  - DOMAIN-SUFFIX,hivecn.cn             # 数据分析平台
+  - DOMAIN-SUFFIX,instabug.com          # 崩溃与行为反馈分析
+  - DOMAIN-SUFFIX,intely.cn             # 行为分析 SaaS
+  - DOMAIN-SUFFIX,iperceptions.com      # 用户满意度反馈分析
+  - DOMAIN-SUFFIX,irs01.com             # 爱点击集团，广告追踪
+  - DOMAIN-SUFFIX,irs01.net
+  - DOMAIN-SUFFIX,irs09.com
+
+  # 💻 广告交易平台（RTB / DSP）
+  - DOMAIN-KEYWORD,openx
+  - DOMAIN-KEYWORD,socdm
+  - DOMAIN-KEYWORD,supersonicads
+  
+  # 📲 移动广告 SDK / 安装分析服务
+  - DOMAIN-SUFFIX,appdriver.cn
+  - DOMAIN-SUFFIX,appjiagu.com
+  - DOMAIN-SUFFIX,anysdk.com
+  - DOMAIN-SUFFIX,aihaoduo.cn
+  - DOMAIN-SUFFIX,ajapk.com
+
+  # 🌏 国内广告/追踪域
+  - DOMAIN-KEYWORD,domob
+  - DOMAIN-KEYWORD,duomeng
+  - DOMAIN-KEYWORD,guanggao
+  - DOMAIN-KEYWORD,zjtoolbar
+  - DOMAIN-SUFFIX,customer-security.online # 恶意或误导性安全提示域名
+
+  # ❌ 恶意导航与垃圾广告站
+  - DOMAIN-SUFFIX,09mk.cn
+  - DOMAIN-SUFFIX,100peng.com
+  - DOMAIN-SUFFIX,114la.com
+  - DOMAIN-SUFFIX,123juzi.net
+  
+  # 🧲 本地化广告聚合 / 可疑推广域名
+  - DOMAIN-SUFFIX,138lm.com
+  - DOMAIN-SUFFIX,17un.com
+  - DOMAIN-SUFFIX,2cnt.net
+  - DOMAIN-SUFFIX,3gmimo.com
+  - DOMAIN-SUFFIX,3xx.vip
+  - DOMAIN-SUFFIX,51.la              # 国内流量统计广告平台，跟踪严重
+  - DOMAIN-SUFFIX,51taifu.com
+  - DOMAIN-SUFFIX,51yes.com
+  - DOMAIN-SUFFIX,600ad.com
+  - DOMAIN-SUFFIX,6dad.com
+  - DOMAIN-SUFFIX,70e.com
+  - DOMAIN-SUFFIX,86.cc
+  - DOMAIN-SUFFIX,8le8le.com
+  - DOMAIN-SUFFIX,8ox.cn
+  - DOMAIN-SUFFIX,95558000.com
+  - DOMAIN-SUFFIX,99click.com
+  - DOMAIN-SUFFIX,99youmeng.com
+  - DOMAIN-SUFFIX,a3p4.net
+  - DOMAIN-SUFFIX,acs86.com
+  - DOMAIN-SUFFIX,admin6.com         # 国内 SEO 导航与广告入口站
+
+  # 🌐 广告辅助域 / 跳转 / 植入类
+  - DOMAIN-SUFFIX,angsrvr.com
+  - DOMAIN-SUFFIX,anquan.org
+  - DOMAIN-SUFFIX,bjvvqu.cn
+  - DOMAIN-SUFFIX,bjxiaohua.com
+  - DOMAIN-SUFFIX,bloggerads.net
+  - DOMAIN-SUFFIX,baoyatu.cc
+  
+  # 📊 数据分析 / 统计服务
+  - DOMAIN-SUFFIX,bugtags.com              # 错误追踪平台
+  - DOMAIN-SUFFIX,chartbeat.com            # 网页热度分析
+  - DOMAIN-SUFFIX,chartboost.com           # 移动游戏广告与分析平台
+  - DOMAIN-SUFFIX,clicki.cn                # 国内网站流量分析
+  - DOMAIN-SUFFIX,clicktracks.com          # 早期点击追踪工具
+  - DOMAIN-SUFFIX,coremetrics.com          # IBM 旗下用户行为分析
+  - DOMAIN-SUFFIX,cnzz.com                 # 阿里巴巴旗下站长工具流量统计
+  - DOMAIN-SUFFIX,cnzzlink.com             # cnzz 附属服务
+  - DOMAIN-SUFFIX,ctrmi.com                # CTR 媒体研究院
+  - DOMAIN-SUFFIX,crasheye.cn              # 崩溃追踪与分析服务
+  - DOMAIN-SUFFIX,crosschannel.com         # 跨平台营销分析工具
+  
+  # 🌐 海外广告平台与统计分析服务
+  - DOMAIN-SUFFIX,acuityplatform.com    # Acuity Ads 加拿大广告平台
+  - DOMAIN-SUFFIX,ad-stir.com           # 日本程序化广告平台 AdStir
+  - DOMAIN-SUFFIX,ad-survey.com         # 在线广告问卷收集平台
+  - DOMAIN-SUFFIX,ad4game.com           # 游戏广告平台
+  - DOMAIN-SUFFIX,adcloud.jp            # 日本广告云平台
+  - DOMAIN-SUFFIX,adcolony.com          # AdColony 视频广告平台
+  - DOMAIN-SUFFIX,addthis.com           # AddThis 分享按钮与广告跟踪
+  - DOMAIN-SUFFIX,adfurikun.jp          # 日本广告平台 Adfurikun
+  - DOMAIN-SUFFIX,adhigh.net            # 高点击广告网络
+  - DOMAIN-SUFFIX,adhood.com            # 广告转跳与跟踪平台
+  - DOMAIN-SUFFIX,adinall.com            # AdInAll 广告网络
+  - DOMAIN-SUFFIX,adition.com            # ADITION 德国广告平台
+  - DOMAIN-SUFFIX,adk2x.com              # AdK2x 程序化广告平台
+  - DOMAIN-SUFFIX,admarket.mobi          # 移动广告市场平台
+  - DOMAIN-SUFFIX,admarvel.com           # AdMarvel 广告中介
+  - DOMAIN-SUFFIX,admedia.com            # AdMedia 在线广告平台
+  - DOMAIN-SUFFIX,adnxs.com              # AppNexus（现 Xandr），全球广告竞价平台
+  - DOMAIN-SUFFIX,adotmob.com            # 法国移动广告平台 Adotmob
+  - DOMAIN-SUFFIX,adperium.com           # 广告联盟平台
+  - DOMAIN-SUFFIX,adriver.ru             # 俄罗斯广告平台
+  - DOMAIN-SUFFIX,adroll.com             # AdRoll 重定向广告平台
+  - DOMAIN-SUFFIX,adsco.re               # AdsCore 广告平台
+  - DOMAIN-SUFFIX,adservice.com          # 广告投放及变现平台
+  - DOMAIN-SUFFIX,adsrvr.org             # The Trade Desk 广告跟踪域名
+  - DOMAIN-SUFFIX,adsymptotic.com        # AOL 旗下广告技术平台
+  - DOMAIN-SUFFIX,adtaily.com            # AdTaily 自助广告平台
+  - DOMAIN-SUFFIX,adtech.de              # AOL 德国广告技术平台
+  - DOMAIN-SUFFIX,adtechjp.com           # AOL 日本广告平台
+  - DOMAIN-SUFFIX,adtechus.com           # AOL 美国广告平台
+  - DOMAIN-SUFFIX,airpush.com            # AirPush 移动广告平台
+  - DOMAIN-SUFFIX,am15.net               # 第三方广告平台（含跳转）
+  - DOMAIN-SUFFIX,amobee.com             # Singtel 旗下 Amobee 广告平台
+  - DOMAIN-SUFFIX,appier.net             # 台湾 Appier，AI 广告技术公司
+  - DOMAIN-SUFFIX,applift.com            # AppLift 应用营销平台
+  - DOMAIN-SUFFIX,apsalar.com            # Apsalar 移动营销分析平台
+  - DOMAIN-SUFFIX,atas.io                # ATAS 广告监测工具
+  - DOMAIN-SUFFIX,awempire.com           # AWE 广告联盟（成人内容较多）
+  - DOMAIN-SUFFIX,axonix.com             # Axonix 英国广告平台
+  - DOMAIN-SUFFIX,beintoo.com            # Beintoo 移动广告平台
+  - DOMAIN-SUFFIX,bepolite.eu            # 广告数据收集器
+  - DOMAIN-SUFFIX,bidtheatre.com         # BidTheatre 瑞典程序化广告平台
+  - DOMAIN-SUFFIX,bidvertiser.com        # BidVertiser 广告联盟
+  - DOMAIN-SUFFIX,blismedia.com          # Blis 定位广告平台
+  - DOMAIN-SUFFIX,brucelead.com          # BruceLead 移动广告公司
+  - DOMAIN-SUFFIX,bttrack.com            # 广告点击追踪服务
+  - DOMAIN-SUFFIX,casalemedia.com        # Index Exchange（原 Casale Media）
+  - DOMAIN-SUFFIX,celtra.com             # Celtra 创意广告管理平台
+  - DOMAIN-SUFFIX,channeladvisor.com     # 电商广告整合与投放平台
+  - DOMAIN-SUFFIX,connexity.net          # Connexity 广告与推荐平台
+  - DOMAIN-SUFFIX,criteo.com             # Criteo 法国重定向广告平台
+  - DOMAIN-SUFFIX,criteo.net             # 同上，跟踪与展示
+  - DOMAIN-SUFFIX,csbew.com              # 国外广告平台
+  - DOMAIN-SUFFIX,demdex.net             # Adobe Audience Manager 跟踪服务
+  - DOMAIN-SUFFIX,directrev.com          # DirectREV 在线广告平台
+  - DOMAIN-SUFFIX,dumedia.ru             # 俄罗斯广告网络
+  - DOMAIN-SUFFIX,effectivemeasure.com   # EM 广告统计与分析（已被合并）
+  - DOMAIN-SUFFIX,effectivemeasure.net   # 同上
+  - DOMAIN-SUFFIX,eqads.com              # eQ 广告平台
+  - DOMAIN-SUFFIX,everesttech.net        # Adobe 广告和分析平台域名
+  - DOMAIN-SUFFIX,exoclick.com           # ExoClick 全球广告联盟（成人内容较多）
+  - DOMAIN-SUFFIX,netshelter.net         # Netshelter 广告媒体网络
+  - DOMAIN-SUFFIX,nexage.com             # Nexage 移动广告平台（被收购）
+  - DOMAIN-SUFFIX,owneriq.net            # OwnerIQ 受众数据平台
+  - DOMAIN-SUFFIX,pixels.asia            # 广告像素跟踪域名
+  - DOMAIN-SUFFIX,plista.com             # Plista 原生广告平台
+  - DOMAIN-SUFFIX,popads.net             # PopAds 弹窗广告联盟
+  - DOMAIN-SUFFIX,powerlinks.com         # PowerLinks 广告市场平台
+  - DOMAIN-SUFFIX,propellerads.com       # PropellerAds 全球广告平台
+  - DOMAIN-SUFFIX,quantserve.com         # Quantcast 流量分析与广告服务
+  - DOMAIN-SUFFIX,rayjump.com            # Mintegral（传音广告 SDK）
+  - DOMAIN-SUFFIX,revdepo.com            # RevDepo 广告网络
+  - DOMAIN-SUFFIX,rubiconproject.com     # Rubicon Project 广告交易平台
+  - DOMAIN-SUFFIX,sape.ru                # Sape.ru 俄罗斯链接广告平台
+  - DOMAIN-SUFFIX,scorecardresearch.com  # comScore 的广告追踪服务
+  - DOMAIN-SUFFIX,segment.com            # Segment 数据收集与广告归因
+  - DOMAIN-SUFFIX,serving-sys.com        # Sizmek 广告投放与追踪系统
+  - DOMAIN-SUFFIX,sharethis.com          # ShareThis 社交按钮+广告数据
+  - DOMAIN-SUFFIX,smaato.com             # Smaato 移动广告平台
+  - DOMAIN-SUFFIX,smaato.net             # Smaato 广告资源域名
+  - DOMAIN-SUFFIX,smartadserver.com      # SmartAdServer 广告服务
+  - DOMAIN-SUFFIX,smartnews-ads.com      # SmartNews 新闻 app 广告域名
+  - DOMAIN-SUFFIX,startapp.com           # StartApp 移动广告平台
+  - DOMAIN-SUFFIX,startappexchange.com   # StartApp 广告交易平台
+  - DOMAIN-SUFFIX,statcounter.com        # 网站流量与点击分析工具
+  - DOMAIN-SUFFIX,steelhousemedia.com    # SteelHouse 广告技术平台
+  - DOMAIN-SUFFIX,stickyadstv.com        # StickyADS.tv 视频广告平台
+  - DOMAIN-SUFFIX,supersonic.com         # SupersonicAds 游戏广告平台
+  - DOMAIN-SUFFIX,taboola.com            # Taboola 原生广告平台
+  - DOMAIN-SUFFIX,tapjoy.com             # Tapjoy 移动激励广告
+  - DOMAIN-SUFFIX,tapjoyads.com          # Tapjoy 广告内容资源域
+  - DOMAIN-SUFFIX,trafficjunky.com       # TrafficJunky 成人广告平台
+  - DOMAIN-SUFFIX,trafficjunky.net       # 同上，内容交付域名
+  - DOMAIN-SUFFIX,tribalfusion.com       # Tribal Fusion 广告投放平台
+  - DOMAIN-SUFFIX,turn.com               # Turn 广告定向与投放系统
+  - DOMAIN-SUFFIX,uberads.com            # UberAds 广告网络
+  - DOMAIN-SUFFIX,vidoomy.com            # Vidoomy 视频广告网络
+  - DOMAIN-SUFFIX,viglink.com            # VigLink 内容变现平台（现为 Sovrn）
+  - DOMAIN-SUFFIX,voicefive.com          # Comscore 旗下数据采集服务
+  - DOMAIN-SUFFIX,wedolook.com           # 广告点击追踪服务
+  - DOMAIN-SUFFIX,yadro.ru               # Yadro.ru 俄罗斯流量分析平台
+  - DOMAIN-SUFFIX,yengo.com              # Yengo 欧洲广告平台
+  - DOMAIN-SUFFIX,zedo.com               # ZEDO 广告服务器平台
+  - DOMAIN-SUFFIX,zemanta.com            # Zemanta 原生广告平台（Outbrain 子公司）
+
+  # 📺 智能电视广告与数据上报
+  - DOMAIN-SUFFIX,coocaatv.com             # 酷开电视数据上报
+  
+  # 📰 社交与互动广告
+  - DOMAIN-SUFFIX,bshare.cn                # 分享按钮统计
+  - DOMAIN-SUFFIX,bsdev.cn                 # 相关广告组件
+
+  # 📱 推送服务 / 消息系统
+  - DOMAIN-SUFFIX,getui.com             # 个推，国内推送服务
+  - DOMAIN-SUFFIX,igexin.com            # 个信，getui 相关域名
+  
+  # ❌ 可疑/诱导类广告或潜在风险平台
+  - DOMAIN-SUFFIX,fancyapi.com          # 疑似诱导类广告接口服务
+  - DOMAIN-SUFFIX,feitian001.com        # 可疑营销推广网站
+  - DOMAIN-SUFFIX,godloveme.cn          # 非典型命名域，可能为诱导广告
+  - DOMAIN-SUFFIX,haoghost.com          # 常见在盗版站点中发现的广告/跳转
+  - DOMAIN-SUFFIX,hypers.com            # 可疑 SDK 关联广告
+  - DOMAIN-SUFFIX,icast.cn              # 媒体广告与数字展示
+  - DOMAIN-SUFFIX,il8r.com              # 短链域名，投放引流可能
+  - DOMAIN-SUFFIX,imageter.com          # 动态广告/数据追踪图服务
+  - DOMAIN-SUFFIX,istreamsche.com       # 可疑链路转发或跨域跟踪
+
+  # 🌐 性能监控/加载监测
+  - DOMAIN-SUFFIX,go-mpulse              # Akamai mPulse，网页性能监控
+  - DOMAIN-SUFFIX,go-mpulse.net
+  
+  # 🇨🇳 国内移动广告与应用推广平台
+  - DOMAIN-SUFFIX,11h5.com               # HTML5 游戏与广告平台
+  - DOMAIN-SUFFIX,1kxun.mobi             # 快讯广告平台
+  - DOMAIN-SUFFIX,26zsd.cn               # 应用分发与广告平台
+  - DOMAIN-SUFFIX,519397.com             # 不明广告追踪服务
+  - DOMAIN-SUFFIX,626uc.com              # UC 分发相关广告域名
+  - DOMAIN-SUFFIX,915.com                # 915 应用平台广告域名
+  - DOMAIN-SUFFIX,appget.cn              # 应用分发平台广告
+  - DOMAIN-SUFFIX,navi.gd.chinamobile.com
+  
+  # 🐼 中国大陆广告 / 应用推广域名
+  - DOMAIN-SUFFIX,appuu.cn             # 应用推广平台（广告分发）
+  - DOMAIN-SUFFIX,huodonghezi.cn       # 活动盒子，APP内广告 SDK
+  - DOMAIN-SUFFIX,wanfeng1.com         # 万丰广告平台
+  - DOMAIN-SUFFIX,win-stock.com.cn     # 股票财经类广告网站
+  - DOMAIN-SUFFIX,zantainet.com        # 暂态网络，广告或推广服务
+  - DOMAIN-SUFFIX,go.10086.cn          # 中国移动营销跳转链接（广告或短信跳转）
+
+  # 🧿 加密货币挖矿 / 浏览器劫持类域名
+  - DOMAIN-SUFFIX,coinhive.com         # CoinHive 浏览器端加密挖矿（已关停）
+  - DOMAIN-SUFFIX,hivedata.cc          # 疑似挖矿或劫持服务（与 CoinHive 类似）
+
+  # ⚠️ 可疑 / 跳转 / 弹窗广告域名（通常用于欺诈、劫持、弹窗）
+  - DOMAIN-SUFFIX,vcbn65.xyz           # 可疑跳转/广告弹窗域名
+  - DOMAIN-SUFFIX,wep016.top           # 可疑广告平台
+  - DOMAIN-SUFFIX,dh54wf.xyz           # 可疑追踪或诱导链接域名
+  - DOMAIN-SUFFIX,g2q3e.cn             # 可疑链接追踪域
+  - DOMAIN-SUFFIX,114so.cn             # 疑似仿冒导航、弹窗广告

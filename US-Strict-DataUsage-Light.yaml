@@ -19,7 +19,5 @@ payload:
   # ===== 社区与辅助工具 =====
   - DOMAIN-SUFFIX,reddit.com
   - DOMAIN-SUFFIX,perplexity.ai
-  
-  
-  
+  - DOMAIN-SUFFIX,scholar.google.com
   
