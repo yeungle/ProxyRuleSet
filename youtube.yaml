@@ -1,1 +1,67 @@
+payload:
+  # 核心域名
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,yt.be
+  - DOMAIN,youtubei.googleapis.com
+  - DOMAIN,yt3.ggpht.com
+  - DOMAIN-SUFFIX,i.ytimg.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-KEYWORD,youtube
 
+  # Google 子域名相关服务
+  - DOMAIN-SUFFIX,ggpht.cn
+  - DOMAIN-SUFFIX,ggpht.com
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,video.google.com
+  - DOMAIN-SUFFIX,wide-youtube.l.google.com
+  - DOMAIN-SUFFIX,withyoutube.com
+  - DOMAIN-SUFFIX,youtube.googleapis.com
+  - DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
+  - DOMAIN-SUFFIX,youtubei.googleapis.com
+
+  # YouTube 子站、子产品
+  - DOMAIN-SUFFIX,youtubeeducation.com
+  - DOMAIN-SUFFIX,youtubefanfest.com
+  - DOMAIN-SUFFIX,youtubegaming.com
+  - DOMAIN-SUFFIX,youtubekids.com
+  - DOMAIN-SUFFIX,youtubego.co.id
+  - DOMAIN-SUFFIX,youtubego.co.in
+  - DOMAIN-SUFFIX,youtubego.com
+  - DOMAIN-SUFFIX,youtubego.com.br
+  - DOMAIN-SUFFIX,youtubego.id
+  - DOMAIN-SUFFIX,youtubego.in
+  - DOMAIN-SUFFIX,youtubemobilesupport.com
+
+  # 各国地区 YouTube 域名（节选，已去重）
+  - DOMAIN-SUFFIX,youtube.co.jp
+  - DOMAIN-SUFFIX,youtube.co.uk
+  - DOMAIN-SUFFIX,youtube.de
+  - DOMAIN-SUFFIX,youtube.fr
+  - DOMAIN-SUFFIX,youtube.it
+  - DOMAIN-SUFFIX,youtube.es
+  - DOMAIN-SUFFIX,youtube.in
+  - DOMAIN-SUFFIX,youtube.sg
+  - DOMAIN-SUFFIX,youtube.kr
+  - DOMAIN-SUFFIX,youtube.hk
+  - DOMAIN-SUFFIX,youtube.com.tw
+  - DOMAIN-SUFFIX,youtube.ca
+  - DOMAIN-SUFFIX,youtube.com.mx
+  - DOMAIN-SUFFIX,youtube.com.au
+  - DOMAIN-SUFFIX,youtube.com.br
+  - DOMAIN-SUFFIX,youtube.com.tr
+  - DOMAIN-SUFFIX,youtube.nl
+  - DOMAIN-SUFFIX,youtube.no
+  - DOMAIN-SUFFIX,youtube.pl
+  - DOMAIN-SUFFIX,youtube.se
+  - DOMAIN-SUFFIX,youtube.be
+  - DOMAIN-SUFFIX,youtube.ch
+  - DOMAIN-SUFFIX,youtube.ie
+
+  # UA 匹配（建议以规则形式写在主配置中）
+  # USER-AGENT,*youtube*
+  # USER-AGENT,*YouTubeMusic*
+  # USER-AGENT,*com.google.ios.youtubemusic*
