@@ -1,0 +1,28 @@
+payload:
+  # ===== BBC 主站域名（新闻、主页、中文网等）=====
+  - DOMAIN-SUFFIX,bbc.com              # 包括 BBC 中文网、BBC News
+  - DOMAIN-SUFFIX,bbc.co.uk            # 英国主站
+  - DOMAIN-SUFFIX,bbc.co               # 通用域
+  - DOMAIN-SUFFIX,bbci.co              # 移动服务/音频
+  - DOMAIN-SUFFIX,bbci.co.uk           # BBC Sounds、iPlayer 等使用
+  - DOMAIN-SUFFIX,bbc.net.uk           # 旧地址或镜像
+  - DOMAIN-SUFFIX,bidi.net.uk          # 子域使用（未知功能）
+
+  # ===== BBC 媒体播放资源 =====
+  - DOMAIN-KEYWORD,bbcfmt              # 视频音频播放服务标识
+  - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net  # BBC 内容分发 CDN
+  - DOMAIN-KEYWORD,uk-live             # BBC UK Live 播流地址关键词
+  - DOMAIN,aod-dash-uk-live.akamaized.net   # BBC UK dash 播流
+  - DOMAIN,aod-hls-uk-live.akamaized.net    # BBC UK hls 播流
+  - DOMAIN,vod-dash-uk-live.akamaized.net   # BBC UK 点播 dash 播流
+  - DOMAIN,vod-thumb-uk-live.akamaized.net  # BBC UK 缩略图资源
+  - DOMAIN-KEYWORD,bbcfmt              # BBC 媒体资源标识
+
+  # ===== 第三方平台播放 BBC 或其他英国流媒体的通用 CDN 地址（需用户测试是否使用 BBC）=====
+  - DOMAIN-SUFFIX,dcblivedazn.akamaized.net  # DAZN（含英区流媒体）
+  - DOMAIN,hboasialive.akamaized.net         # HBO Asia 直播（可能共用 CDN）
+  - DOMAIN,hbogoprod-vod.akamaized.net       # HBO Go 视频（可能共用 CDN）
+  - DOMAIN-KEYWORD,abematv.akamaized.net     # AbemaTV（包含英区资源）
+
+  # ===== 非 BBC 网站但疑似同组策略调用（如 Channel4）=====
+  - DOMAIN-SUFFIX,channel4.com         # 英国 C4 电视频道，非 BBC，但常并入 BBC 策略组
