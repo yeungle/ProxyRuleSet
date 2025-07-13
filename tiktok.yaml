@@ -1,0 +1,19 @@
+# NAME: TikTok
+# AUTHOR: Snow Han
+# UPDATED: 2025-07-13
+# CATEGORY: 短视频 / 社交媒体
+# ICON: 🎹
+
+payload:
+  # ===== 主站及核心域名 =====
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-SUFFIX,musical.ly
+
+  # ===== 内容分发 CDN =====
+  - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,tiktokcdn-us.com
+  - DOMAIN-KEYWORD,-tiktokcdn-com
+
+  # ===== API 域名 =====
+  - DOMAIN-SUFFIX,tik-tokapi.com

@@ -1,0 +1,19 @@
+# NAME: Bloomberg_WSJ_Reuters_Select
+# AUTHOR: Snow Han
+# UPDATED: 2025-07-13
+# CATEGORY: 财经 / 新闻 / AI工具
+# ICON: 📡
+
+payload:
+  # ===== 权威财经媒体 =====
+  - DOMAIN-SUFFIX,bloomberg.com
+  - DOMAIN-SUFFIX,wsj.com
+  - DOMAIN-SUFFIX,reuters.com
+
+  # ===== 科技新闻与资源 =====
+  - DOMAIN-SUFFIX,techcrunch.com
+  - DOMAIN-SUFFIX,loc.gov
+
+  # ===== 社区与辅助工具 =====
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,perplexity.ai
