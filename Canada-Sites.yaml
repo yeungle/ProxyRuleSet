@@ -1,2 +1,3 @@
-  - DOMAIN-SUFFIX,torontopubliclibrary.ca
-  - DOMAIN-SUFFIX,cppinvestments.com
+payload:
+  - '+.torontopubliclibrary.ca'
+  - '+.cppinvestments.com'
