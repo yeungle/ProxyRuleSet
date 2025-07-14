@@ -1,22 +1,22 @@
 payload:
   # ZDF 相关网站
-  - DOMAIN-SUFFIX,prosieben.de,🇩🇪 德国网站
-  - DOMAIN-SUFFIX,zdf.de,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,nmrodam.com,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,tag.aticdn.net,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,de-config.sensic.net,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,logs1407.xiti.com,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,zdfvod-pckgr.akamaized.net,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,zdfvod.akamaized.net,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,nrodizdf-a.akamaihd.net,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,rodizdf-a.akamaihd.net,🇩🇪 德国网站 # ZDF
-  - DOMAIN-SUFFIX,zdfvod-rwrtr.akamaized.net,🇩🇪 德国网站 # ZDF
+  - DOMAIN-SUFFIX,prosieben.de
+  - DOMAIN-SUFFIX,zdf.de
+  - DOMAIN-SUFFIX,nmrodam.com
+  - DOMAIN-SUFFIX,tag.aticdn.net
+  - DOMAIN-SUFFIX,de-config.sensic.net
+  - DOMAIN-SUFFIX,logs1407.xiti.com
+  - DOMAIN-SUFFIX,zdfvod-pckgr.akamaized.net
+  - DOMAIN-SUFFIX,zdfvod.akamaized.net
+  - DOMAIN-SUFFIX,nrodizdf-a.akamaihd.net
+  - DOMAIN-SUFFIX,rodizdf-a.akamaihd.net
+  - DOMAIN-SUFFIX,zdfvod-rwrtr.akamaized.net
 
   # ARD Mediathek 相关网站
-  - DOMAIN-SUFFIX,ardmediathek.de,🇩🇪 德国网站 # ARD Mediathek
-  - DOMAIN-SUFFIX,ard.de,🇩🇪 德国网站 # ARD Mediathek
-  - DOMAIN-SUFFIX,wdrmedien-a.akamaid.net,🇩🇪 德国网站 # ARD Mediathek
-  - DOMAIN-SUFFIX,wdradaptiv-vh.akamaihd.net,🇩🇪 德国网站 # ARD Mediathek
-  - DOMAIN-SUFFIX,wdrvod-rwrtr.akamaized.net,🇩🇪 德国网站 # ARD Mediathek
-  - DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net,🇩🇪 德国网站 # ARD Mediathek
-  - DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net,🇩🇪 德国网站 # ARD Mediathek
+  - DOMAIN-SUFFIX,ardmediathek.de
+  - DOMAIN-SUFFIX,ard.de
+  - DOMAIN-SUFFIX,wdrmedien-a.akamaid.net
+  - DOMAIN-SUFFIX,wdradaptiv-vh.akamaihd.net
+  - DOMAIN-SUFFIX,wdrvod-rwrtr.akamaized.net
+  - DOMAIN-SUFFIX,wdrvod-pckgr.akamaized.net
+  - DOMAIN-SUFFIX,wdrmedien-a.akamaihd.net
